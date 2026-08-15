@@ -26,7 +26,7 @@ class _OxQuizScreenState extends State<OxQuizScreen> {
   int _correctCount = 0;
   bool? _selectedAnswer;
   bool _isLoading = true;
-  Timer? _stopTimer;
+  StreamSubscription<Duration>? _positionSub;
 
   String get _bookDir =>
       'book_${widget.book.id.toString().padLeft(3, '0')}';
@@ -62,15 +62,19 @@ class _OxQuizScreenState extends State<OxQuizScreen> {
   }
 
   Future<void> _playCurrentQuestion() async {
-    _stopTimer?.cancel();
+    _positionSub?.cancel();
     final q = _questions[_index];
     await _player.seek(Duration(milliseconds: (q.startTime * 1000).toInt()));
     await _player.play();
     // quiz_ox.mp3는 모든 질문이 이어진 하나의 파일이라, 다음 질문으로
-    // 계속 재생되지 않도록 이 질문 구간이 끝나면 멈춘다.
-    final segmentMs = ((q.endTime - q.startTime) * 1000).toInt();
-    _stopTimer = Timer(Duration(milliseconds: segmentMs), () {
-      if (mounted) _player.pause();
+    // 계속 재생되지 않도록 실제 재생 위치가 이 질문 구간 끝에 도달하면
+    // 멈춘다. (seek/버퍼링 지연이 있어 타이머 대신 실제 위치를 봐야 한다.)
+    final endMs = (q.endTime * 1000).toInt();
+    _positionSub = _player.positionStream.listen((position) {
+      if (position.inMilliseconds >= endMs) {
+        _player.pause();
+        _positionSub?.cancel();
+      }
     });
   }
 
@@ -111,7 +115,7 @@ class _OxQuizScreenState extends State<OxQuizScreen> {
 
   @override
   void dispose() {
-    _stopTimer?.cancel();
+    _positionSub?.cancel();
     _player.dispose();
     super.dispose();
   }
