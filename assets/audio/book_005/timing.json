@@ -1,0 +1,243 @@
+{
+  "book_id": 5,
+  "sentences": [
+    {
+      "order": 0,
+      "text_en": "Papa Bear, Mama Bear, and Baby Bear live in a forest.",
+      "text_ko": "아빠 곰, 엄마 곰, 아기 곰이 숲속에 살아요.",
+      "start": 0.0,
+      "end": 5.612
+    },
+    {
+      "order": 1,
+      "text_en": "Papa Bear is big.",
+      "text_ko": "아빠 곰은 커요.",
+      "start": 5.612,
+      "end": 8.312
+    },
+    {
+      "order": 2,
+      "text_en": "Mama Bear is medium.",
+      "text_ko": "엄마 곰은 중간 크기예요.",
+      "start": 8.312,
+      "end": 11.287
+    },
+    {
+      "order": 3,
+      "text_en": "Baby Bear is small.",
+      "text_ko": "아기 곰은 작아요.",
+      "start": 11.287,
+      "end": 14.137
+    },
+    {
+      "order": 4,
+      "text_en": "They have soup for breakfast.",
+      "text_ko": "곰 가족은 아침으로 스프를 먹으려 해요.",
+      "start": 14.137,
+      "end": 17.3
+    },
+    {
+      "order": 5,
+      "text_en": "The soup is too hot!",
+      "text_ko": "스프가 너무 뜨거워요!",
+      "start": 17.3,
+      "end": 20.113
+    },
+    {
+      "order": 6,
+      "text_en": "They go for a walk.",
+      "text_ko": "곰 가족은 산책을 가요.",
+      "start": 20.113,
+      "end": 22.825
+    },
+    {
+      "order": 7,
+      "text_en": "A girl named Goldilocks comes to the house.",
+      "text_ko": "골디락스라는 한 소녀가 집에 와요.",
+      "start": 22.825,
+      "end": 27.05
+    },
+    {
+      "order": 8,
+      "text_en": "She sees three bowls of soup.",
+      "text_ko": "소녀는 스프 세 대접을 봐요.",
+      "start": 27.05,
+      "end": 30.462
+    },
+    {
+      "order": 9,
+      "text_en": "She tries Papa's soup.",
+      "text_ko": "아빠 곰의 스프를 먹어봐요.",
+      "start": 30.462,
+      "end": 33.438
+    },
+    {
+      "order": 10,
+      "text_en": "\"Too hot!\"",
+      "text_ko": "\"너무 뜨거워!\"",
+      "start": 33.438,
+      "end": 35.538
+    },
+    {
+      "order": 11,
+      "text_en": "She tries Mama's soup.",
+      "text_ko": "엄마 곰의 스프를 먹어봐요.",
+      "start": 35.538,
+      "end": 38.475
+    },
+    {
+      "order": 12,
+      "text_en": "\"Too cold!\"",
+      "text_ko": "\"너무 차가워!\"",
+      "start": 38.475,
+      "end": 40.688
+    },
+    {
+      "order": 13,
+      "text_en": "She tries Baby's soup.",
+      "text_ko": "아기 곰의 스프를 먹어봐요.",
+      "start": 40.688,
+      "end": 43.712
+    },
+    {
+      "order": 14,
+      "text_en": "\"Yum! Just right!\"",
+      "text_ko": "\"음! 딱 좋아!\"",
+      "start": 43.712,
+      "end": 47.288
+    },
+    {
+      "order": 15,
+      "text_en": "She eats it all up.",
+      "text_ko": "소녀는 스프를 싹 비워요.",
+      "start": 47.288,
+      "end": 49.938
+    },
+    {
+      "order": 16,
+      "text_en": "Goldilocks sees three chairs.",
+      "text_ko": "골디락스는 의자 세 개를 봐요.",
+      "start": 49.938,
+      "end": 53.462
+    },
+    {
+      "order": 17,
+      "text_en": "Papa's chair is too big!",
+      "text_ko": "아빠 곰의 의자는 너무 커요!",
+      "start": 53.462,
+      "end": 56.663
+    },
+    {
+      "order": 18,
+      "text_en": "Mama's chair is too big, too!",
+      "text_ko": "엄마 곰의 의자도 너무 커요!",
+      "start": 56.663,
+      "end": 60.45
+    },
+    {
+      "order": 19,
+      "text_en": "Baby's chair is just right!",
+      "text_ko": "아기 곰의 의자는 딱 맞아요!",
+      "start": 60.45,
+      "end": 63.675
+    },
+    {
+      "order": 20,
+      "text_en": "Crack!",
+      "text_ko": "콰직!",
+      "start": 63.675,
+      "end": 65.588
+    },
+    {
+      "order": 21,
+      "text_en": "Oh no, the chair breaks!",
+      "text_ko": "오 이런, 의자가 부러져요!",
+      "start": 65.588,
+      "end": 68.987
+    },
+    {
+      "order": 22,
+      "text_en": "Goldilocks goes upstairs.",
+      "text_ko": "골디락스는 위층으로 올라가요.",
+      "start": 68.987,
+      "end": 72.338
+    },
+    {
+      "order": 23,
+      "text_en": "She finds three beds.",
+      "text_ko": "침대 세 개를 발견해요.",
+      "start": 72.338,
+      "end": 75.388
+    },
+    {
+      "order": 24,
+      "text_en": "Papa's bed is too hard.",
+      "text_ko": "아빠 곰의 침대는 너무 딱딱해요.",
+      "start": 75.388,
+      "end": 78.55
+    },
+    {
+      "order": 25,
+      "text_en": "Mama's bed is too soft.",
+      "text_ko": "엄마 곰의 침대는 너무 푹신해요.",
+      "start": 78.55,
+      "end": 81.787
+    },
+    {
+      "order": 26,
+      "text_en": "Baby's bed is just right!",
+      "text_ko": "아기 곰의 침대는 딱 좋아요!",
+      "start": 81.787,
+      "end": 84.925
+    },
+    {
+      "order": 27,
+      "text_en": "Goldilocks falls fast asleep.",
+      "text_ko": "골디락스는 깊은 잠에 빠져요.",
+      "start": 84.925,
+      "end": 88.475
+    },
+    {
+      "order": 28,
+      "text_en": "The three bears come home.",
+      "text_ko": "곰 세 마리가 집에 돌아와요.",
+      "start": 88.475,
+      "end": 91.6
+    },
+    {
+      "order": 29,
+      "text_en": "Baby Bear cries, \"Someone ate my soup! Someone broke my chair!\"",
+      "text_ko": "아기 곰이 울먹여요. \"누군가 내 스프를 먹었어! 누군가 내 의자를 부쉈어!\"",
+      "start": 91.6,
+      "end": 98.3
+    },
+    {
+      "order": 30,
+      "text_en": "They go upstairs.",
+      "text_ko": "곰 가족은 위층으로 올라가요.",
+      "start": 98.3,
+      "end": 100.975
+    },
+    {
+      "order": 31,
+      "text_en": "Baby Bear says, \"Someone is in my bed!\"",
+      "text_ko": "아기 곰이 말해요. \"누군가 내 침대에 있어!\"",
+      "start": 100.975,
+      "end": 105.213
+    },
+    {
+      "order": 32,
+      "text_en": "Goldilocks wakes up.",
+      "text_ko": "골디락스가 깨어나요.",
+      "start": 105.213,
+      "end": 108.05
+    },
+    {
+      "order": 33,
+      "text_en": "She sees the bears and runs away!",
+      "text_ko": "곰들을 보고 밖으로 도망친답니다!",
+      "start": 108.05,
+      "end": 111.138
+    }
+  ]
+}

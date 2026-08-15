@@ -1,0 +1,40 @@
+{
+  "book_id": 1,
+  "sentences": [
+    {
+      "order": 0,
+      "text_en": "Once upon a time,",
+      "text_ko": "옛날 옛날에,",
+      "start": 0.0,
+      "end": 1.3
+    },
+    {
+      "order": 1,
+      "text_en": "there was a little rabbit.",
+      "text_ko": "작은 토끼 한 마리가 살았어요.",
+      "start": 1.3,
+      "end": 4.588
+    },
+    {
+      "order": 2,
+      "text_en": "The rabbit lived in a green forest.",
+      "text_ko": "토끼는 초록빛 숲에 살았어요.",
+      "start": 4.588,
+      "end": 8.338
+    },
+    {
+      "order": 3,
+      "text_en": "Every morning, the rabbit ran and played.",
+      "text_ko": "매일 아침, 토끼는 뛰어 놀았어요.",
+      "start": 8.338,
+      "end": 12.613
+    },
+    {
+      "order": 4,
+      "text_en": "The rabbit was very happy.",
+      "text_ko": "토끼는 아주 행복했어요.",
+      "start": 12.613,
+      "end": 15.312
+    }
+  ]
+}

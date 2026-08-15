@@ -1,0 +1,46 @@
+name: kids_english_app
+description: "어린이 영어 동화 읽기 앱 (Phase 1 MVP)"
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  provider: ^6.1.2
+  sqflite: ^2.3.3
+  sqflite_common_ffi: ^2.3.3
+  sqflite_common_ffi_web: ^1.1.1
+  path_provider: ^2.1.4
+  path: ^1.9.0
+  just_audio: ^0.9.40
+  just_audio_media_kit: ^2.1.0
+  media_kit_libs_windows_audio: any
+  media_kit_libs_linux: any
+  record: ^5.1.2
+  permission_handler: ^11.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+# record 5.2.1과 함께 해석되는 record_linux 0.7.2가 깨진 버전(startStream 미구현)이라
+# Windows 빌드 시 커널 스냅샷 컴파일이 실패한다. 고쳐진 버전으로 강제 고정.
+# 참고: https://github.com/k2-fsa/sherpa-onnx/issues/2597
+dependency_overrides:
+  record_linux: ^1.1.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/audio/book_001/
+    - assets/audio/book_002/
+    - assets/audio/book_003/
+    - assets/audio/book_004/
+    - assets/audio/book_005/
+    - assets/images/covers/

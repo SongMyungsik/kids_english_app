@@ -1,0 +1,229 @@
+{
+  "book_id": 4,
+  "sentences": [
+    {
+      "order": 0,
+      "text_en": "A Little Red Hen lives on a farm with a Dog, a Cat, and a Duck.",
+      "text_ko": "빨간 암탉이 농장에서 개, 고양이, 오리와 함께 살아요.",
+      "start": 0.0,
+      "end": 5.975
+    },
+    {
+      "order": 1,
+      "text_en": "One day, she finds some wheat seeds.",
+      "text_ko": "어느 날, 암탉이 밀 씨앗을 발견해요.",
+      "start": 5.975,
+      "end": 10.137
+    },
+    {
+      "order": 2,
+      "text_en": "\"Who will help me plant the seeds?\" asks the Hen.",
+      "text_ko": "\"누가 씨앗 심는 것을 도와줄래?\" 암탉이 물어요.",
+      "start": 10.137,
+      "end": 14.562
+    },
+    {
+      "order": 3,
+      "text_en": "\"Not I,\" barks the Dog.",
+      "text_ko": "\"난 안 해,\" 개가 멍멍 짖어요.",
+      "start": 14.562,
+      "end": 17.75
+    },
+    {
+      "order": 4,
+      "text_en": "\"Not I,\" meows the Cat.",
+      "text_ko": "\"난 안 해,\" 고양이가 야옹해요.",
+      "start": 17.75,
+      "end": 20.863
+    },
+    {
+      "order": 5,
+      "text_en": "\"Not I,\" quacks the Duck.",
+      "text_ko": "\"난 안 해,\" 오리가 꽥꽥해요.",
+      "start": 20.863,
+      "end": 24.1
+    },
+    {
+      "order": 6,
+      "text_en": "\"Then I will do it myself,\" says the Hen.",
+      "text_ko": "\"그럼 내가 혼자 하지 뭐,\" 암탉이 말해요.",
+      "start": 24.1,
+      "end": 28.25
+    },
+    {
+      "order": 7,
+      "text_en": "And she does!",
+      "text_ko": "그리고 암탉은 혼자 씨앗을 심어요!",
+      "start": 28.25,
+      "end": 30.637
+    },
+    {
+      "order": 8,
+      "text_en": "The wheat grows tall and yellow.",
+      "text_ko": "밀이 길고 노랗게 자라나요.",
+      "start": 30.637,
+      "end": 34.15
+    },
+    {
+      "order": 9,
+      "text_en": "\"Who will help me cut the wheat?\" asks the Hen.",
+      "text_ko": "\"누가 밀 베는 것을 도와줄래?\" 암탉이 물어요.",
+      "start": 34.15,
+      "end": 38.3
+    },
+    {
+      "order": 10,
+      "text_en": "\"Not I,\" says the Dog.",
+      "text_ko": "\"난 안 해,\" 개가 말해요.",
+      "start": 38.3,
+      "end": 41.4
+    },
+    {
+      "order": 11,
+      "text_en": "\"Not I,\" says the Cat.",
+      "text_ko": "\"난 안 해,\" 고양이가 말해요.",
+      "start": 41.4,
+      "end": 44.425
+    },
+    {
+      "order": 12,
+      "text_en": "\"Not I,\" says the Duck.",
+      "text_ko": "\"난 안 해,\" 오리가 말해요.",
+      "start": 44.425,
+      "end": 47.5
+    },
+    {
+      "order": 13,
+      "text_en": "\"Then I will do it myself,\" says the Hen.",
+      "text_ko": "\"그럼 내가 혼자 하지 뭐,\" 암탉이 말해요.",
+      "start": 47.5,
+      "end": 51.65
+    },
+    {
+      "order": 14,
+      "text_en": "And she does!",
+      "text_ko": "그리고 암탉은 혼자 밀을 베어요!",
+      "start": 51.65,
+      "end": 54.038
+    },
+    {
+      "order": 15,
+      "text_en": "The Hen brings the flour home.",
+      "text_ko": "암탉이 밀가루를 집으로 가져와요.",
+      "start": 54.038,
+      "end": 57.4
+    },
+    {
+      "order": 16,
+      "text_en": "\"Who will help me make the bread?\" asks the Hen.",
+      "text_ko": "\"누가 빵 만드는 것을 도와줄래?\" 암탉이 물어요.",
+      "start": 57.4,
+      "end": 61.587
+    },
+    {
+      "order": 17,
+      "text_en": "\"Not I,\" says the Dog.",
+      "text_ko": "\"난 안 해,\" 개가 말해요.",
+      "start": 61.587,
+      "end": 64.688
+    },
+    {
+      "order": 18,
+      "text_en": "\"Not I,\" says the Cat.",
+      "text_ko": "\"난 안 해,\" 고양이가 말해요.",
+      "start": 64.688,
+      "end": 67.713
+    },
+    {
+      "order": 19,
+      "text_en": "\"Not I,\" says the Duck.",
+      "text_ko": "\"난 안 해,\" 오리가 말해요.",
+      "start": 67.713,
+      "end": 70.787
+    },
+    {
+      "order": 20,
+      "text_en": "\"Then I will do it myself,\" says the Hen.",
+      "text_ko": "\"그럼 내가 혼자 하지 뭐,\" 암탉이 말해요.",
+      "start": 70.787,
+      "end": 74.938
+    },
+    {
+      "order": 21,
+      "text_en": "And she bakes warm bread.",
+      "text_ko": "그리고 암탉은 따뜻한 빵을 구워요.",
+      "start": 74.938,
+      "end": 77.963
+    },
+    {
+      "order": 22,
+      "text_en": "The bread smells so good!",
+      "text_ko": "빵 냄새가 정말 좋아요!",
+      "start": 77.963,
+      "end": 81.112
+    },
+    {
+      "order": 23,
+      "text_en": "The Dog, the Cat, and the Duck run to the Hen.",
+      "text_ko": "개, 고양이, 오리가 암탉에게 달려와요.",
+      "start": 81.112,
+      "end": 85.812
+    },
+    {
+      "order": 24,
+      "text_en": "\"Who will help me eat the bread?\" asks the Hen.",
+      "text_ko": "\"누가 이 빵 먹는 것을 도와줄래?\" 암탉이 물어요.",
+      "start": 85.812,
+      "end": 89.95
+    },
+    {
+      "order": 25,
+      "text_en": "\"I will!\" barks the Dog.",
+      "text_ko": "\"내가 할게!\" 개가 멍멍해요.",
+      "start": 89.95,
+      "end": 93.05
+    },
+    {
+      "order": 26,
+      "text_en": "\"I will!\" meows the Cat.",
+      "text_ko": "\"내가 할게!\" 고양이가 야옹해요.",
+      "start": 93.05,
+      "end": 96.15
+    },
+    {
+      "order": 27,
+      "text_en": "\"I will!\" quacks the Duck.",
+      "text_ko": "\"내가 할게!\" 오리가 꽥꽥해요.",
+      "start": 96.15,
+      "end": 99.25
+    },
+    {
+      "order": 28,
+      "text_en": "\"No, you will not!\" says the Hen.",
+      "text_ko": "\"아니, 너희는 못 먹어!\" 암탉이 말해요.",
+      "start": 99.25,
+      "end": 103.138
+    },
+    {
+      "order": 29,
+      "text_en": "\"I will eat it myself!\"",
+      "text_ko": "\"내가 혼자 다 먹을 거야!\"",
+      "start": 103.138,
+      "end": 105.975
+    },
+    {
+      "order": 30,
+      "text_en": "The Little Red Hen eats the yummy bread with her chicks.",
+      "text_ko": "빨간 암탉은 아기 병아리들과 함께 맛있는 빵을 먹어요.",
+      "start": 105.975,
+      "end": 110.737
+    },
+    {
+      "order": 31,
+      "text_en": "Yum, yum, yum!",
+      "text_ko": "냠냠냠!",
+      "start": 110.737,
+      "end": 113.35
+    }
+  ]
+}
