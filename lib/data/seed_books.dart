@@ -41,4 +41,12 @@ final List<Map<String, dynamic>> seedBooks = [
     'audio_path': 'assets/audio/book_005/full.mp3',
     'timing_path': 'assets/audio/book_005/timing.json',
   },
+  {
+    'id': 6,
+    'title': 'The Boy Who Cried Wolf',
+    'level': 'Level 2',
+    'cover_image': 'assets/images/covers/book_006.png',
+    'audio_path': 'assets/audio/book_006/full.mp3',
+    'timing_path': 'assets/audio/book_006/timing.json',
+  },
 ];
