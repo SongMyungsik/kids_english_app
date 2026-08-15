@@ -7,7 +7,7 @@ import '../services/audio_service.dart';
 import '../services/progress_service.dart';
 import '../widgets/sentence_highlighter.dart';
 import '../widgets/record_button.dart';
-import 'complete_screen.dart';
+import 'ox_quiz_screen.dart';
 
 class ReadingScreen extends StatefulWidget {
   final Book book;
@@ -77,14 +77,17 @@ class _ReadingScreenState extends State<ReadingScreen> {
                   padding: const EdgeInsets.only(bottom: 16),
                   child: ElevatedButton.icon(
                     icon: const Icon(Icons.check),
-                    label: const Text('다 읽었어요!'),
+                    label: const Text(
+                      '다 읽었어요! 퀴즈를 풀어요!',
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
                     onPressed: () async {
                       await _progressService.markCompleted(widget.book.id);
                       if (context.mounted) {
                         Navigator.pushReplacement(
                           context,
                           MaterialPageRoute(
-                            builder: (_) => CompleteScreen(book: widget.book),
+                            builder: (_) => OxQuizScreen(book: widget.book),
                           ),
                         );
                       }
