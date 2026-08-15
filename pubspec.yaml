@@ -27,6 +27,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.14.4
 
 # record 5.2.1과 함께 해석되는 record_linux 0.7.2가 깨진 버전(startStream 미구현)이라
 # Windows 빌드 시 커널 스냅샷 컴파일이 실패한다. 고쳐진 버전으로 강제 고정.
@@ -45,3 +46,14 @@ flutter:
     - assets/audio/book_005/
     - assets/audio/book_006/
     - assets/images/covers/
+
+flutter_launcher_icons:
+  image_path: "assets/icon/app_icon.png"
+  android: true
+  ios: true
+  windows:
+    generate: true
+  web:
+    generate: true
+  macos:
+    generate: true
