@@ -45,6 +45,7 @@ flutter:
     - assets/audio/book_004/
     - assets/audio/book_005/
     - assets/audio/book_006/
+    - assets/audio/shared/
     - assets/images/covers/
 
 flutter_launcher_icons:

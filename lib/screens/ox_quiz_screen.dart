@@ -8,7 +8,10 @@ import 'package:just_audio/just_audio.dart';
 import '../models/book.dart';
 import '../models/ox_question.dart';
 import '../services/audio_asset_loader.dart';
-import 'complete_screen.dart';
+
+/// OxQuizScreen이 완료 시 Navigator.pop으로 돌려주는 결과.
+/// 이 책에 퀴즈가 없어 곧바로 되돌아간 경우에는 null이 전달된다.
+typedef OxQuizResult = ({int correct, int total});
 
 class OxQuizScreen extends StatefulWidget {
   final Book book;
@@ -56,8 +59,8 @@ class _OxQuizScreenState extends State<OxQuizScreen> {
       });
       _playCurrentQuestion();
     } catch (_) {
-      // 이 책에 아직 퀴즈가 없으면 바로 완료 화면으로 건너뛴다.
-      _goToComplete();
+      // 이 책에 아직 퀴즈가 없으면 결과 없이 허브로 돌아간다.
+      if (mounted) Navigator.pop(context);
     }
   }
 
@@ -89,7 +92,10 @@ class _OxQuizScreenState extends State<OxQuizScreen> {
 
   void _next() {
     if (_index == _questions.length - 1) {
-      _goToComplete();
+      Navigator.pop(
+        context,
+        (correct: _correctCount, total: _questions.length),
+      );
       return;
     }
     setState(() {
@@ -97,20 +103,6 @@ class _OxQuizScreenState extends State<OxQuizScreen> {
       _selectedAnswer = null;
     });
     _playCurrentQuestion();
-  }
-
-  void _goToComplete() {
-    if (!mounted) return;
-    Navigator.pushReplacement(
-      context,
-      MaterialPageRoute(
-        builder: (_) => CompleteScreen(
-          book: widget.book,
-          quizCorrect: _correctCount,
-          quizTotal: _questions.length,
-        ),
-      ),
-    );
   }
 
   @override

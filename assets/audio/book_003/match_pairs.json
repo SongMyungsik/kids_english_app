@@ -1,0 +1,29 @@
+{
+  "book_id": 3,
+  "pairs": [
+    {
+      "order": 0,
+      "emoji": "🌾",
+      "word_en": "Straw",
+      "word_ko": "짚",
+      "start": 0.0,
+      "end": 0.65
+    },
+    {
+      "order": 1,
+      "emoji": "🪵",
+      "word_en": "Stick",
+      "word_ko": "나뭇가지",
+      "start": 0.65,
+      "end": 1.788
+    },
+    {
+      "order": 2,
+      "emoji": "🧱",
+      "word_en": "Brick",
+      "word_ko": "벽돌",
+      "start": 1.788,
+      "end": 2.85
+    }
+  ]
+}

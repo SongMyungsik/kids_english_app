@@ -7,7 +7,7 @@ import '../services/audio_service.dart';
 import '../services/progress_service.dart';
 import '../widgets/sentence_highlighter.dart';
 import '../widgets/record_button.dart';
-import 'ox_quiz_screen.dart';
+import 'activity_hub_screen.dart';
 
 class ReadingScreen extends StatefulWidget {
   final Book book;
@@ -87,7 +87,7 @@ class _ReadingScreenState extends State<ReadingScreen> {
                         Navigator.pushReplacement(
                           context,
                           MaterialPageRoute(
-                            builder: (_) => OxQuizScreen(book: widget.book),
+                            builder: (_) => ActivityHubScreen(book: widget.book),
                           ),
                         );
                       }
