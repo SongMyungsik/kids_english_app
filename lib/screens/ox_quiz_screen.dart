@@ -1,4 +1,3 @@
-import 'dart:async';
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
@@ -29,10 +28,10 @@ class _OxQuizScreenState extends State<OxQuizScreen> {
   int _correctCount = 0;
   bool? _selectedAnswer;
   bool _isLoading = true;
-  StreamSubscription<Duration>? _positionSub;
 
   String get _bookDir =>
       'book_${widget.book.id.toString().padLeft(3, '0')}';
+  String get _audioPath => 'assets/audio/$_bookDir/quiz_ox.mp3';
 
   @override
   void initState() {
@@ -50,14 +49,12 @@ class _OxQuizScreenState extends State<OxQuizScreen> {
           .toList()
         ..sort((a, b) => a.order.compareTo(b.order));
 
-      await loadAudioAsset(_player, 'assets/audio/$_bookDir/quiz_ox.mp3');
-
       if (!mounted) return;
       setState(() {
         _questions = questions;
         _isLoading = false;
       });
-      _playCurrentQuestion();
+      await _playCurrentQuestion();
     } catch (_) {
       // 이 책에 아직 퀴즈가 없으면 결과 없이 허브로 돌아간다.
       if (mounted) Navigator.pop(context);
@@ -65,20 +62,16 @@ class _OxQuizScreenState extends State<OxQuizScreen> {
   }
 
   Future<void> _playCurrentQuestion() async {
-    _positionSub?.cancel();
     final q = _questions[_index];
-    await _player.seek(Duration(milliseconds: (q.startTime * 1000).toInt()));
+    // quiz_ox.mp3는 모든 질문이 이어진 하나의 파일이라, 다음 질문까지
+    // 흘러 들어가지 않도록 이 질문 구간만 클리핑해서 로드한다.
+    final clip = await loadClippedSegment(
+      _audioPath,
+      start: Duration(milliseconds: (q.startTime * 1000).toInt()),
+      end: Duration(milliseconds: (q.endTime * 1000).toInt()),
+    );
+    await _player.setAudioSource(clip);
     await _player.play();
-    // quiz_ox.mp3는 모든 질문이 이어진 하나의 파일이라, 다음 질문으로
-    // 계속 재생되지 않도록 실제 재생 위치가 이 질문 구간 끝에 도달하면
-    // 멈춘다. (seek/버퍼링 지연이 있어 타이머 대신 실제 위치를 봐야 한다.)
-    final endMs = (q.endTime * 1000).toInt();
-    _positionSub = _player.positionStream.listen((position) {
-      if (position.inMilliseconds >= endMs) {
-        _player.pause();
-        _positionSub?.cancel();
-      }
-    });
   }
 
   void _answer(bool value) {
@@ -107,7 +100,6 @@ class _OxQuizScreenState extends State<OxQuizScreen> {
 
   @override
   void dispose() {
-    _positionSub?.cancel();
     _player.dispose();
     super.dispose();
   }

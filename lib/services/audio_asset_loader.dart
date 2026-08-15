@@ -14,7 +14,27 @@ Future<void> loadAudioAsset(AudioPlayer player, String assetPath) async {
     await player.setAsset(assetPath);
     return;
   }
+  final path = await _resolveLocalPath(assetPath);
+  await player.setFilePath(path);
+}
 
+/// 하나의 mp3에 여러 구간(문장/문제/단어)이 이어 붙어 있을 때, 그 중 한
+/// 구간만 재생하고 정확히 그 지점에서 멈추도록 클리핑된 AudioSource를
+/// 만든다. positionStream을 감시해서 수동으로 pause()하는 방식은 seek나
+/// 버퍼링 지연 때문에 다음 구간까지 흘러 들어가는 문제가 있어, 오디오
+/// 엔진이 직접 재생 범위를 제한하는 이 방식이 훨씬 안정적이다.
+Future<ClippingAudioSource> loadClippedSegment(
+  String assetPath, {
+  required Duration start,
+  required Duration end,
+}) async {
+  final child = kIsWeb
+      ? AudioSource.asset(assetPath)
+      : AudioSource.file(await _resolveLocalPath(assetPath));
+  return ClippingAudioSource(child: child, start: start, end: end);
+}
+
+Future<String> _resolveLocalPath(String assetPath) async {
   final bytes = await rootBundle.load(assetPath);
   final dir = await getTemporaryDirectory();
   final fileName = assetPath.split('/').last;
@@ -23,5 +43,5 @@ Future<void> loadAudioAsset(AudioPlayer player, String assetPath) async {
     bytes.buffer.asUint8List(bytes.offsetInBytes, bytes.lengthInBytes),
     flush: true,
   );
-  await player.setFilePath(file.path);
+  return file.path;
 }

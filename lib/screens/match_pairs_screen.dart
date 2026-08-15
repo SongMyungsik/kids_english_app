@@ -27,6 +27,8 @@ class _MatchPairsScreenState extends State<MatchPairsScreen> {
   bool _isLoading = true;
 
   String get _bookDir => 'book_${widget.book.id.toString().padLeft(3, '0')}';
+  String get _wordsAudioPath => 'assets/audio/$_bookDir/match_pairs.mp3';
+  static const _sfxAudioPath = 'assets/audio/shared/great_job.mp3';
 
   @override
   void initState() {
@@ -44,8 +46,7 @@ class _MatchPairsScreenState extends State<MatchPairsScreen> {
           .toList()
         ..sort((a, b) => a.order.compareTo(b.order));
 
-      await loadAudioAsset(_wordPlayer, 'assets/audio/$_bookDir/match_pairs.mp3');
-      await loadAudioAsset(_sfxPlayer, 'assets/audio/shared/great_job.mp3');
+      await loadAudioAsset(_sfxPlayer, _sfxAudioPath);
 
       if (!mounted) return;
       setState(() {
@@ -60,8 +61,14 @@ class _MatchPairsScreenState extends State<MatchPairsScreen> {
   }
 
   Future<void> _playWord(MatchPair pair) async {
-    await _wordPlayer
-        .seek(Duration(milliseconds: (pair.startTime * 1000).toInt()));
+    // match_pairs.mp3는 모든 단어가 이어진 하나의 파일이라, 다음 단어까지
+    // 흘러 들어가지 않도록 이 단어 구간만 클리핑해서 로드한다.
+    final clip = await loadClippedSegment(
+      _wordsAudioPath,
+      start: Duration(milliseconds: (pair.startTime * 1000).toInt()),
+      end: Duration(milliseconds: (pair.endTime * 1000).toInt()),
+    );
+    await _wordPlayer.setAudioSource(clip);
     await _wordPlayer.play();
   }
 
@@ -70,7 +77,14 @@ class _MatchPairsScreenState extends State<MatchPairsScreen> {
     setState(() => _matched.add(pair.order));
     await _playWord(pair);
     if (_matched.length == _pairs.length) {
-      await Future.delayed(const Duration(milliseconds: 700));
+      // _wordPlayer.play()가 재생 완료를 기다리지 않고 바로 반환하는
+      // 백엔드도 있어(media_kit), 단어 길이만큼 명시적으로 기다린 뒤
+      // "Great job!"을 재생한다. 안 그러면 두 음성이 겹쳐서 나온다.
+      final wordDurationMs =
+          ((pair.endTime - pair.startTime) * 1000).round();
+      await Future.delayed(
+        Duration(milliseconds: wordDurationMs + 400),
+      );
       await _sfxPlayer.seek(Duration.zero);
       await _sfxPlayer.play();
     }
