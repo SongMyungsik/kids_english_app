@@ -118,9 +118,10 @@ class _OxQuizScreenState extends State<OxQuizScreen> {
 
     return Scaffold(
       appBar: AppBar(title: Text('${widget.book.title} 퀴즈')),
-      body: Padding(
+      body: SingleChildScrollView(
         padding: const EdgeInsets.all(24),
         child: Column(
+          mainAxisSize: MainAxisSize.min,
           children: [
             Text(
               '${_index + 1} / ${_questions.length}',
