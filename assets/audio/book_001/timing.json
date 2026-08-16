@@ -3,38 +3,171 @@
   "sentences": [
     {
       "order": 0,
-      "text_en": "Once upon a time,",
-      "text_ko": "옛날 옛날에,",
+      "text_en": "A little rabbit lives in a green forest.",
+      "text_ko": "작은 토끼가 초록 숲속에 살아요.",
       "start": 0.0,
-      "end": 1.3
+      "end": 4.037
     },
     {
       "order": 1,
-      "text_en": "there was a little rabbit.",
-      "text_ko": "작은 토끼 한 마리가 살았어요.",
-      "start": 1.3,
-      "end": 4.588
+      "text_en": "His name is Barnaby.",
+      "text_ko": "이름은 바나비예요.",
+      "start": 4.037,
+      "end": 6.838
     },
     {
       "order": 2,
-      "text_en": "The rabbit lived in a green forest.",
-      "text_ko": "토끼는 초록빛 숲에 살았어요.",
-      "start": 4.588,
-      "end": 8.338
+      "text_en": "Barnaby is very hungry.",
+      "text_ko": "바나비는 배가 너무 고파요.",
+      "start": 6.838,
+      "end": 9.988
     },
     {
       "order": 3,
-      "text_en": "Every morning, the rabbit ran and played.",
-      "text_ko": "매일 아침, 토끼는 뛰어 놀았어요.",
-      "start": 8.338,
-      "end": 12.613
+      "text_en": "\"I want a yummy carrot!\" he says.",
+      "text_ko": "\"맛있는 당근이 먹고 싶어!\" 바나비가 말해요.",
+      "start": 9.988,
+      "end": 13.825
     },
     {
       "order": 4,
-      "text_en": "The rabbit was very happy.",
-      "text_ko": "토끼는 아주 행복했어요.",
-      "start": 12.613,
-      "end": 15.312
+      "text_en": "Barnaby hops to a big tree.",
+      "text_ko": "바나비가 커다란 나무로 깡충깡충 뛰어가요.",
+      "start": 13.825,
+      "end": 17.137
+    },
+    {
+      "order": 5,
+      "text_en": "Hop, hop, hop!",
+      "text_ko": "깡충, 깡충, 깡충!",
+      "start": 17.137,
+      "end": 20.087
+    },
+    {
+      "order": 6,
+      "text_en": "He sees a red apple on the tree.",
+      "text_ko": "나무에 달린 빨간 사과를 봐요.",
+      "start": 20.087,
+      "end": 23.55
+    },
+    {
+      "order": 7,
+      "text_en": "\"Is this a carrot?\" Barnaby asks.",
+      "text_ko": "\"이게 당근인가?\" 바나비가 물어요.",
+      "start": 23.55,
+      "end": 28.038
+    },
+    {
+      "order": 8,
+      "text_en": "\"No, this is an apple!\" says a little bird.",
+      "text_ko": "\"아니, 이건 사과야!\" 작은 새가 말해요.",
+      "start": 28.038,
+      "end": 32.587
+    },
+    {
+      "order": 9,
+      "text_en": "Barnaby hops to the flowers.",
+      "text_ko": "바나비가 꽃밭으로 뛰어가요.",
+      "start": 32.587,
+      "end": 35.938
+    },
+    {
+      "order": 10,
+      "text_en": "A pretty butterfly flies by.",
+      "text_ko": "예쁜 나비가 날아 지나가요.",
+      "start": 35.938,
+      "end": 39.312
+    },
+    {
+      "order": 11,
+      "text_en": "\"Hello, Butterfly! Where is my carrot?\"",
+      "text_ko": "\"안녕, 나비야! 내 당근은 어디 있니?\"",
+      "start": 39.312,
+      "end": 44.175
+    },
+    {
+      "order": 12,
+      "text_en": "The butterfly smiles.",
+      "text_ko": "나비가 웃어요.",
+      "start": 44.175,
+      "end": 47.125
+    },
+    {
+      "order": 13,
+      "text_en": "\"Look over there!\"",
+      "text_ko": "\"저 쪽을 봐!\"",
+      "start": 47.125,
+      "end": 49.475
+    },
+    {
+      "order": 14,
+      "text_en": "Barnaby looks under a green leaf.",
+      "text_ko": "바나비가 초록 잎사귀 아래를 봐요.",
+      "start": 49.475,
+      "end": 53.013
+    },
+    {
+      "order": 15,
+      "text_en": "Wow! He finds a big orange carrot!",
+      "text_ko": "와! 커다란 주황색 당근을 발견해요!",
+      "start": 53.013,
+      "end": 57.725
+    },
+    {
+      "order": 16,
+      "text_en": "\"Hooray! A carrot!\" Barnaby is so happy.",
+      "text_ko": "\"만세! 당근이다!\" 바나비는 너무 기뻐요.",
+      "start": 57.725,
+      "end": 63.712
+    },
+    {
+      "order": 17,
+      "text_en": "He takes a big bite.",
+      "text_ko": "한 입 크게 베어 물어요.",
+      "start": 63.712,
+      "end": 66.463
+    },
+    {
+      "order": 18,
+      "text_en": "Crunch, crunch, crunch!",
+      "text_ko": "아삭, 아삭, 아삭!",
+      "start": 66.463,
+      "end": 70.075
+    },
+    {
+      "order": 19,
+      "text_en": "The carrot is sweet and yummy.",
+      "text_ko": "당근은 달콤하고 맛있어요.",
+      "start": 70.075,
+      "end": 73.388
+    },
+    {
+      "order": 20,
+      "text_en": "Barnaby's tummy is full.",
+      "text_ko": "바나비의 배가 불룩해져요.",
+      "start": 73.388,
+      "end": 76.475
+    },
+    {
+      "order": 21,
+      "text_en": "\"I love carrots!\"",
+      "text_ko": "\"난 당근이 정말 좋아!\"",
+      "start": 76.475,
+      "end": 79.188
+    },
+    {
+      "order": 22,
+      "text_en": "The happy little rabbit falls asleep.",
+      "text_ko": "행복한 작은 토끼는 깊은 잠에 빠진답니다.",
+      "start": 79.188,
+      "end": 82.862
+    },
+    {
+      "order": 23,
+      "text_en": "Zzz...",
+      "text_ko": "스르륵...",
+      "start": 82.862,
+      "end": 84.638
     }
   ]
 }

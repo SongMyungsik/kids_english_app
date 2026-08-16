@@ -3,33 +3,33 @@
   "questions": [
     {
       "order": 0,
-      "question_en": "Did the rabbit live in a red house?",
-      "question_ko": "토끼는 빨간 집에 살았나요?",
-      "answer": false,
-      "feedback_en": "No, the rabbit lived in a green forest!",
-      "feedback_ko": "아니에요, 토끼는 초록빛 숲에 살았어요!",
+      "question_en": "Is the little rabbit's name Barnaby?",
+      "question_ko": "작은 토끼의 이름은 바나비인가요?",
+      "answer": true,
+      "feedback_en": "Yes, that's right!",
+      "feedback_ko": "네, 맞아요!",
       "start": 0.0,
-      "end": 3.65
+      "end": 3.737
     },
     {
       "order": 1,
-      "question_en": "Was the rabbit very happy?",
-      "question_ko": "토끼는 아주 행복했나요?",
+      "question_en": "Did Barnaby find a carrot under a green leaf?",
+      "question_ko": "바나비는 초록 잎사귀 아래에서 당근을 찾았나요?",
       "answer": true,
-      "feedback_en": "Yes, the rabbit was very happy!",
-      "feedback_ko": "네, 토끼는 아주 행복했어요!",
-      "start": 3.65,
-      "end": 7.0
+      "feedback_en": "Yes, that's right!",
+      "feedback_ko": "네, 맞아요!",
+      "start": 3.737,
+      "end": 8.25
     },
     {
       "order": 2,
-      "question_en": "Did the rabbit sleep all day?",
-      "question_ko": "토끼는 하루 종일 잠만 잤나요?",
+      "question_en": "Did the little bird tell Barnaby the apple was a carrot?",
+      "question_ko": "작은 새는 바나비에게 사과가 당근이라고 말했나요?",
       "answer": false,
-      "feedback_en": "No, the rabbit ran and played every morning!",
-      "feedback_ko": "아니에요, 토끼는 매일 아침 뛰어 놀았어요!",
-      "start": 7.0,
-      "end": 9.575
+      "feedback_en": "No, the bird said it was an apple!",
+      "feedback_ko": "아니에요, 새는 그건 사과라고 말했어요!",
+      "start": 8.25,
+      "end": 12.25
     }
   ]
 }

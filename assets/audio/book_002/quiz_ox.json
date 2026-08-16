@@ -3,33 +3,33 @@
   "questions": [
     {
       "order": 0,
-      "question_en": "Did the cat find a big red ball?",
-      "question_ko": "고양이는 커다란 빨간 공을 발견했나요?",
+      "question_en": "Is the curious cat's name Kitty?",
+      "question_ko": "호기심 많은 고양이의 이름은 키티인가요?",
       "answer": true,
       "feedback_en": "Yes, that's right!",
       "feedback_ko": "네, 맞아요!",
       "start": 0.0,
-      "end": 3.688
+      "end": 3.663
     },
     {
       "order": 1,
-      "question_en": "Did the cat play with the ball for only a minute?",
-      "question_ko": "고양이는 공을 딱 1분만 가지고 놀았나요?",
+      "question_en": "Did Kitty find a big dog under the bed?",
+      "question_ko": "키티는 침대 밑에서 커다란 개를 발견했나요?",
       "answer": false,
-      "feedback_en": "No, the cat played with it all day!",
-      "feedback_ko": "아니에요, 하루 종일 놀았어요!",
-      "start": 3.688,
-      "end": 8.0
+      "feedback_en": "No, she found a tiny mouse!",
+      "feedback_ko": "아니에요, 조그만 생쥐를 발견했어요!",
+      "start": 3.663,
+      "end": 7.75
     },
     {
       "order": 2,
-      "question_en": "Did the cat love to explore the garden?",
-      "question_ko": "고양이는 정원을 탐험하는 것을 좋아했나요?",
+      "question_en": "Did Kitty drink warm milk before sleeping?",
+      "question_ko": "키티는 자기 전에 따뜻한 우유를 마셨나요?",
       "answer": true,
       "feedback_en": "Yes, that's right!",
       "feedback_ko": "네, 맞아요!",
-      "start": 8.0,
-      "end": 11.238
+      "start": 7.75,
+      "end": 11.3
     }
   ]
 }
