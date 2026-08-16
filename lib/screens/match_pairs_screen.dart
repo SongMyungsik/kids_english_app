@@ -21,10 +21,12 @@ class MatchPairsScreen extends StatefulWidget {
 class _MatchPairsScreenState extends State<MatchPairsScreen> {
   final AudioPlayer _wordPlayer = AudioPlayer();
   final AudioPlayer _sfxPlayer = AudioPlayer();
-  List<MatchPair> _pairs = [];
+  List<MatchPair> _allPairs = [];
   List<MatchPair> _shuffledWords = [];
   final Set<int> _matched = {};
   bool _isLoading = true;
+  int _currentRound = 0;
+  int _roundCount = 1;
 
   String get _bookDir => 'book_${widget.book.id.toString().padLeft(3, '0')}';
   String get _wordsAudioPath => 'assets/audio/$_bookDir/match_pairs.mp3';
@@ -32,6 +34,14 @@ class _MatchPairsScreenState extends State<MatchPairsScreen> {
 
   String _completionEmoji = '🎉';
   String _completionText = 'Great job!';
+
+  List<MatchPair> get _currentRoundPairs =>
+      _allPairs.where((p) => p.round == _currentRound).toList();
+
+  bool get _isRoundComplete =>
+      _currentRoundPairs.every((p) => _matched.contains(p.order));
+
+  bool get _isLastRound => _currentRound == _roundCount - 1;
 
   @override
   void initState() {
@@ -53,8 +63,10 @@ class _MatchPairsScreenState extends State<MatchPairsScreen> {
 
       if (!mounted) return;
       setState(() {
-        _pairs = pairs;
-        _shuffledWords = List.of(pairs)..shuffle(Random());
+        _allPairs = pairs;
+        _roundCount = pairs.map((p) => p.round).toSet().length;
+        _currentRound = 0;
+        _shuffledWords = List.of(_currentRoundPairs)..shuffle(Random());
         _completionEmoji = data['completion_emoji'] as String? ?? '🎉';
         _completionText = data['completion_text'] as String? ?? 'Great job!';
         _isLoading = false;
@@ -81,7 +93,7 @@ class _MatchPairsScreenState extends State<MatchPairsScreen> {
     if (_matched.contains(pair.order)) return;
     setState(() => _matched.add(pair.order));
     await _playWord(pair);
-    if (_matched.length == _pairs.length) {
+    if (_isRoundComplete && _isLastRound) {
       // _wordPlayer.play()가 재생 완료를 기다리지 않고 바로 반환하는
       // 백엔드도 있어(media_kit), 단어 길이만큼 명시적으로 기다린 뒤
       // 완료 음성을 재생한다. 안 그러면 두 음성이 겹쳐서 나온다.
@@ -93,6 +105,13 @@ class _MatchPairsScreenState extends State<MatchPairsScreen> {
       await _sfxPlayer.seek(Duration.zero);
       await _sfxPlayer.play();
     }
+  }
+
+  void _nextRound() {
+    setState(() {
+      _currentRound++;
+      _shuffledWords = List.of(_currentRoundPairs)..shuffle(Random());
+    });
   }
 
   @override
@@ -108,21 +127,26 @@ class _MatchPairsScreenState extends State<MatchPairsScreen> {
       return const Scaffold(body: Center(child: CircularProgressIndicator()));
     }
 
-    final allMatched = _matched.length == _pairs.length;
+    final roundPairs = _currentRoundPairs;
+    final roundComplete = _isRoundComplete;
+    final finalComplete = roundComplete && _isLastRound;
+    final matchedInRound =
+        roundPairs.where((p) => _matched.contains(p.order)).length;
 
     return Scaffold(
       appBar: AppBar(title: Text('${widget.book.title} 짝맞추기')),
       body: SafeArea(
-        child: Padding(
+        child: SingleChildScrollView(
           padding: const EdgeInsets.all(16),
           child: Column(
+            mainAxisSize: MainAxisSize.min,
             children: [
               AnimatedScale(
-                scale: allMatched ? 1.0 : 0.6,
+                scale: finalComplete ? 1.0 : 0.6,
                 duration: const Duration(milliseconds: 400),
                 curve: Curves.elasticOut,
                 child: AnimatedOpacity(
-                  opacity: allMatched ? 1.0 : 0.25,
+                  opacity: finalComplete ? 1.0 : 0.25,
                   duration: const Duration(milliseconds: 400),
                   child: Text(
                     _completionEmoji,
@@ -131,7 +155,7 @@ class _MatchPairsScreenState extends State<MatchPairsScreen> {
                 ),
               ),
               const SizedBox(height: 4),
-              if (allMatched)
+              if (finalComplete)
                 Text(
                   _completionText,
                   style: const TextStyle(
@@ -142,7 +166,8 @@ class _MatchPairsScreenState extends State<MatchPairsScreen> {
                 )
               else
                 Text(
-                  '${_matched.length} / ${_pairs.length}',
+                  '라운드 ${_currentRound + 1} / $_roundCount  ·  '
+                  '$matchedInRound / ${roundPairs.length}',
                   style: const TextStyle(fontSize: 16, color: Colors.grey),
                 ),
               const SizedBox(height: 8),
@@ -152,41 +177,45 @@ class _MatchPairsScreenState extends State<MatchPairsScreen> {
                 style: TextStyle(fontSize: 14, color: Colors.grey),
               ),
               const SizedBox(height: 16),
-              Expanded(
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Expanded(
-                      child: Column(
-                        children: _pairs
-                            .map((p) => _ImageDropTarget(
-                                  pair: p,
-                                  matched: _matched.contains(p.order),
-                                  onCorrectDrop: () => _onMatched(p),
-                                ))
-                            .toList(),
-                      ),
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Expanded(
+                    child: Column(
+                      children: roundPairs
+                          .map((p) => _ImageDropTarget(
+                                pair: p,
+                                matched: _matched.contains(p.order),
+                                onCorrectDrop: () => _onMatched(p),
+                              ))
+                          .toList(),
                     ),
-                    const SizedBox(width: 24),
-                    Expanded(
-                      child: Column(
-                        children: _shuffledWords
-                            .map((p) => _WordDraggable(
-                                  pair: p,
-                                  matched: _matched.contains(p.order),
-                                ))
-                            .toList(),
-                      ),
+                  ),
+                  const SizedBox(width: 24),
+                  Expanded(
+                    child: Column(
+                      children: _shuffledWords
+                          .map((p) => _WordDraggable(
+                                pair: p,
+                                matched: _matched.contains(p.order),
+                              ))
+                          .toList(),
                     ),
-                  ],
-                ),
+                  ),
+                ],
               ),
-              if (allMatched)
+              if (roundComplete)
                 Padding(
                   padding: const EdgeInsets.only(top: 8),
                   child: ElevatedButton(
-                    onPressed: () => Navigator.pop(context, true),
-                    child: const Text('다음으로'),
+                    onPressed: () {
+                      if (_isLastRound) {
+                        Navigator.pop(context, true);
+                      } else {
+                        _nextRound();
+                      }
+                    },
+                    child: Text(_isLastRound ? '다음으로' : '다음 라운드'),
                   ),
                 ),
             ],

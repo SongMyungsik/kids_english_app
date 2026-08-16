@@ -5,6 +5,7 @@
   "pairs": [
     {
       "order": 0,
+      "round": 0,
       "emoji": "🐰",
       "word_en": "Rabbit",
       "word_ko": "토끼",
@@ -13,6 +14,7 @@
     },
     {
       "order": 1,
+      "round": 0,
       "emoji": "🥕",
       "word_en": "Carrot",
       "word_ko": "당근",
@@ -21,11 +23,39 @@
     },
     {
       "order": 2,
+      "round": 0,
       "emoji": "🦋",
       "word_en": "Butterfly",
       "word_ko": "나비",
       "start": 1.663,
       "end": 3.013
+    },
+    {
+      "order": 3,
+      "round": 1,
+      "emoji": "🌳",
+      "word_en": "Tree",
+      "word_ko": "나무",
+      "start": 3.013,
+      "end": 4.0
+    },
+    {
+      "order": 4,
+      "round": 1,
+      "emoji": "🍎",
+      "word_en": "Apple",
+      "word_ko": "사과",
+      "start": 4.0,
+      "end": 5.075
+    },
+    {
+      "order": 5,
+      "round": 1,
+      "emoji": "🐦",
+      "word_en": "Bird",
+      "word_ko": "새",
+      "start": 5.075,
+      "end": 6.1
     }
   ]
 }

@@ -5,6 +5,7 @@
   "pairs": [
     {
       "order": 0,
+      "round": 0,
       "emoji": "🐑",
       "word_en": "Sheep",
       "word_ko": "양",
@@ -13,6 +14,7 @@
     },
     {
       "order": 1,
+      "round": 0,
       "emoji": "🐺",
       "word_en": "Wolf",
       "word_ko": "늑대",
@@ -21,11 +23,39 @@
     },
     {
       "order": 2,
+      "round": 0,
       "emoji": "🧑‍🤝‍🧑",
       "word_en": "Villagers",
       "word_ko": "마을 사람들",
       "start": 1.625,
-      "end": 3.038
+      "end": 3.025
+    },
+    {
+      "order": 3,
+      "round": 1,
+      "emoji": "👦",
+      "word_en": "Boy",
+      "word_ko": "소년",
+      "start": 3.025,
+      "end": 3.987
+    },
+    {
+      "order": 4,
+      "round": 1,
+      "emoji": "⛰️",
+      "word_en": "Hill",
+      "word_ko": "언덕",
+      "start": 3.987,
+      "end": 4.925
+    },
+    {
+      "order": 5,
+      "round": 1,
+      "emoji": "😢",
+      "word_en": "Sad",
+      "word_ko": "슬픈",
+      "start": 4.925,
+      "end": 6.05
     }
   ]
 }

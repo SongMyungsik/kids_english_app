@@ -5,6 +5,7 @@
   "pairs": [
     {
       "order": 0,
+      "round": 0,
       "emoji": "🌱",
       "word_en": "Seed",
       "word_ko": "씨앗",
@@ -13,6 +14,7 @@
     },
     {
       "order": 1,
+      "round": 0,
       "emoji": "🌾",
       "word_en": "Wheat",
       "word_ko": "밀",
@@ -21,11 +23,39 @@
     },
     {
       "order": 2,
+      "round": 0,
       "emoji": "🍞",
       "word_en": "Bread",
       "word_ko": "빵",
       "start": 1.538,
       "end": 2.575
+    },
+    {
+      "order": 3,
+      "round": 1,
+      "emoji": "🐔",
+      "word_en": "Hen",
+      "word_ko": "암탉",
+      "start": 2.575,
+      "end": 3.575
+    },
+    {
+      "order": 4,
+      "round": 1,
+      "emoji": "🐶",
+      "word_en": "Dog",
+      "word_ko": "개",
+      "start": 3.575,
+      "end": 4.612
+    },
+    {
+      "order": 5,
+      "round": 1,
+      "emoji": "🦆",
+      "word_en": "Duck",
+      "word_ko": "오리",
+      "start": 4.612,
+      "end": 5.65
     }
   ]
 }

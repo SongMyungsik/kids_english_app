@@ -1,5 +1,6 @@
 class MatchPair {
   final int order;
+  final int round;
   final String emoji;
   final String wordEn;
   final String wordKo;
@@ -8,6 +9,7 @@ class MatchPair {
 
   MatchPair({
     required this.order,
+    required this.round,
     required this.emoji,
     required this.wordEn,
     required this.wordKo,
@@ -17,6 +19,7 @@ class MatchPair {
 
   factory MatchPair.fromJson(Map<String, dynamic> json) => MatchPair(
         order: json['order'] as int,
+        round: json['round'] as int? ?? 0,
         emoji: json['emoji'] as String,
         wordEn: json['word_en'] as String,
         wordKo: json['word_ko'] as String,

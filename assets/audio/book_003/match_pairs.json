@@ -5,6 +5,7 @@
   "pairs": [
     {
       "order": 0,
+      "round": 0,
       "emoji": "🌾",
       "word_en": "Straw",
       "word_ko": "짚",
@@ -13,6 +14,7 @@
     },
     {
       "order": 1,
+      "round": 0,
       "emoji": "🪵",
       "word_en": "Stick",
       "word_ko": "나뭇가지",
@@ -21,11 +23,39 @@
     },
     {
       "order": 2,
+      "round": 0,
       "emoji": "🧱",
       "word_en": "Brick",
       "word_ko": "벽돌",
       "start": 1.788,
-      "end": 2.85
+      "end": 2.837
+    },
+    {
+      "order": 3,
+      "round": 1,
+      "emoji": "🐷",
+      "word_en": "Pig",
+      "word_ko": "돼지",
+      "start": 2.837,
+      "end": 3.837
+    },
+    {
+      "order": 4,
+      "round": 1,
+      "emoji": "🐺",
+      "word_en": "Wolf",
+      "word_ko": "늑대",
+      "start": 3.837,
+      "end": 4.963
+    },
+    {
+      "order": 5,
+      "round": 1,
+      "emoji": "🏠",
+      "word_en": "House",
+      "word_ko": "집",
+      "start": 4.963,
+      "end": 6.1
     }
   ]
 }

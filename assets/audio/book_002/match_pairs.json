@@ -5,6 +5,7 @@
   "pairs": [
     {
       "order": 0,
+      "round": 0,
       "emoji": "🐱",
       "word_en": "Cat",
       "word_ko": "고양이",
@@ -13,6 +14,7 @@
     },
     {
       "order": 1,
+      "round": 0,
       "emoji": "🐭",
       "word_en": "Mouse",
       "word_ko": "생쥐",
@@ -21,11 +23,39 @@
     },
     {
       "order": 2,
+      "round": 0,
       "emoji": "🥛",
       "word_en": "Milk",
       "word_ko": "우유",
       "start": 1.6,
-      "end": 2.712
+      "end": 2.7
+    },
+    {
+      "order": 3,
+      "round": 1,
+      "emoji": "🛏️",
+      "word_en": "Bed",
+      "word_ko": "침대",
+      "start": 2.7,
+      "end": 3.65
+    },
+    {
+      "order": 4,
+      "round": 1,
+      "emoji": "🥣",
+      "word_en": "Bowl",
+      "word_ko": "그릇",
+      "start": 3.65,
+      "end": 4.675
+    },
+    {
+      "order": 5,
+      "round": 1,
+      "emoji": "💡",
+      "word_en": "Light",
+      "word_ko": "빛",
+      "start": 4.675,
+      "end": 5.713
     }
   ]
 }

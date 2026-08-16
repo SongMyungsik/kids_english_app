@@ -5,6 +5,7 @@
   "pairs": [
     {
       "order": 0,
+      "round": 0,
       "emoji": "🐻",
       "word_en": "Bear",
       "word_ko": "곰",
@@ -13,6 +14,7 @@
     },
     {
       "order": 1,
+      "round": 0,
       "emoji": "🍲",
       "word_en": "Soup",
       "word_ko": "스프",
@@ -21,11 +23,39 @@
     },
     {
       "order": 2,
+      "round": 0,
       "emoji": "🛏️",
       "word_en": "Bed",
       "word_ko": "침대",
       "start": 1.538,
-      "end": 2.5
+      "end": 2.487
+    },
+    {
+      "order": 3,
+      "round": 1,
+      "emoji": "👧",
+      "word_en": "Girl",
+      "word_ko": "소녀",
+      "start": 2.487,
+      "end": 3.487
+    },
+    {
+      "order": 4,
+      "round": 1,
+      "emoji": "🪑",
+      "word_en": "Chair",
+      "word_ko": "의자",
+      "start": 3.487,
+      "end": 4.525
+    },
+    {
+      "order": 5,
+      "round": 1,
+      "emoji": "🌲",
+      "word_en": "Forest",
+      "word_ko": "숲",
+      "start": 4.525,
+      "end": 5.85
     }
   ]
 }
