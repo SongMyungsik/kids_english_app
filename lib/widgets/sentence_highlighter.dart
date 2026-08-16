@@ -6,12 +6,16 @@ class SentenceHighlighter extends StatefulWidget {
   final List<SentenceModel> sentences;
   final int currentIndex;
   final ValueChanged<SentenceModel> onTapSentence;
+  final bool showReplayButton;
+  final ValueChanged<SentenceModel>? onReplay;
 
   const SentenceHighlighter({
     super.key,
     required this.sentences,
     required this.currentIndex,
     required this.onTapSentence,
+    this.showReplayButton = false,
+    this.onReplay,
   });
 
   @override
@@ -65,6 +69,8 @@ class _SentenceHighlighterState extends State<SentenceHighlighter> {
       itemBuilder: (context, index) {
         final sentence = widget.sentences[index];
         final isActive = index == widget.currentIndex;
+        final showReplay =
+            isActive && widget.showReplayButton && widget.onReplay != null;
 
         return GestureDetector(
           key: _itemKeys[index],
@@ -72,29 +78,51 @@ class _SentenceHighlighterState extends State<SentenceHighlighter> {
           child: AnimatedContainer(
             duration: const Duration(milliseconds: 200),
             margin: const EdgeInsets.symmetric(vertical: 6, horizontal: 16),
-            padding: const EdgeInsets.all(14),
+            padding: EdgeInsets.fromLTRB(14, 14, 14, showReplay ? 32 : 14),
             decoration: BoxDecoration(
               color: isActive ? Colors.amber.shade200 : Colors.grey.shade100,
               borderRadius: BorderRadius.circular(12),
             ),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+            child: Stack(
               children: [
-                Text(
-                  sentence.textEn,
-                  style: TextStyle(
-                    fontSize: 22,
-                    fontWeight: isActive ? FontWeight.bold : FontWeight.normal,
-                  ),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      sentence.textEn,
+                      style: TextStyle(
+                        fontSize: 22,
+                        fontWeight:
+                            isActive ? FontWeight.bold : FontWeight.normal,
+                      ),
+                    ),
+                    const SizedBox(height: 4),
+                    Text(
+                      sentence.textKo,
+                      style: TextStyle(
+                        fontSize: 15,
+                        color: Colors.grey.shade700,
+                      ),
+                    ),
+                  ],
                 ),
-                const SizedBox(height: 4),
-                Text(
-                  sentence.textKo,
-                  style: TextStyle(
-                    fontSize: 15,
-                    color: Colors.grey.shade700,
+                if (showReplay)
+                  Positioned(
+                    right: 0,
+                    bottom: 0,
+                    child: InkWell(
+                      borderRadius: BorderRadius.circular(16),
+                      onTap: () => widget.onReplay!(sentence),
+                      child: const Padding(
+                        padding: EdgeInsets.all(4),
+                        child: Icon(
+                          Icons.replay,
+                          size: 20,
+                          color: Colors.black54,
+                        ),
+                      ),
+                    ),
                   ),
-                ),
               ],
             ),
           ),
