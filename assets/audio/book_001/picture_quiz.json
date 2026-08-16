@@ -1,0 +1,86 @@
+{
+  "book_id": 1,
+  "questions": [
+    {
+      "order": 0,
+      "question_en": "Who is the little rabbit in this story?",
+      "question_ko": "주인공인 '작은 토끼'는 누구일까요?",
+      "choices": [
+        {
+          "emoji": "🐰",
+          "label_en": "Rabbit",
+          "correct": true
+        },
+        {
+          "emoji": "🐻",
+          "label_en": "Bear",
+          "correct": false
+        },
+        {
+          "emoji": "🐦",
+          "label_en": "Bird",
+          "correct": false
+        }
+      ],
+      "effect_text": "Hop, hop! I'm a Rabbit!",
+      "q_start": 0.0,
+      "q_end": 3.775,
+      "effect_start": 3.775,
+      "effect_end": 8.137
+    },
+    {
+      "order": 1,
+      "question_en": "What yummy vegetable did the rabbit look for in the forest?",
+      "question_ko": "토끼가 숲속에서 찾으려고 한 맛있는 채소는 무엇일까요?",
+      "choices": [
+        {
+          "emoji": "🥕",
+          "label_en": "Carrot",
+          "correct": true
+        },
+        {
+          "emoji": "🍎",
+          "label_en": "Apple",
+          "correct": false
+        },
+        {
+          "emoji": "🍌",
+          "label_en": "Banana",
+          "correct": false
+        }
+      ],
+      "effect_text": "Crunch! Yummy Carrot!",
+      "q_start": 8.137,
+      "q_end": 13.15,
+      "effect_start": 13.15,
+      "effect_end": 17.2
+    },
+    {
+      "order": 2,
+      "question_en": "Who did the rabbit meet with colorful wings on the way?",
+      "question_ko": "토끼가 길을 가다가 만난 날개가 알록달록한 친구는 누구일까요?",
+      "choices": [
+        {
+          "emoji": "🐟",
+          "label_en": "Fish",
+          "correct": false
+        },
+        {
+          "emoji": "🐸",
+          "label_en": "Frog",
+          "correct": false
+        },
+        {
+          "emoji": "🦋",
+          "label_en": "Butterfly",
+          "correct": true
+        }
+      ],
+      "effect_text": "Flutter, flutter!",
+      "q_start": 17.2,
+      "q_end": 21.688,
+      "effect_start": 21.688,
+      "effect_end": 23.962
+    }
+  ]
+}

@@ -5,6 +5,7 @@ import '../models/book.dart';
 import 'complete_screen.dart';
 import 'match_pairs_screen.dart';
 import 'ox_quiz_screen.dart';
+import 'picture_quiz_screen.dart';
 
 class ActivityHubScreen extends StatefulWidget {
   final Book book;
@@ -19,10 +20,13 @@ class _ActivityHubScreenState extends State<ActivityHubScreen> {
   bool _isLoading = true;
   bool _hasQuiz = false;
   bool _hasMatch = false;
+  bool _hasPictureQuiz = false;
 
   int? _quizCorrect;
   int? _quizTotal;
   bool _matchDone = false;
+  int? _pictureQuizCorrect;
+  int? _pictureQuizTotal;
 
   String get _bookDir => 'book_${widget.book.id.toString().padLeft(3, '0')}';
 
@@ -45,10 +49,13 @@ class _ActivityHubScreenState extends State<ActivityHubScreen> {
     final hasQuiz = await _assetExists('assets/audio/$_bookDir/quiz_ox.json');
     final hasMatch =
         await _assetExists('assets/audio/$_bookDir/match_pairs.json');
+    final hasPictureQuiz =
+        await _assetExists('assets/audio/$_bookDir/picture_quiz.json');
     if (!mounted) return;
     setState(() {
       _hasQuiz = hasQuiz;
       _hasMatch = hasMatch;
+      _hasPictureQuiz = hasPictureQuiz;
       _isLoading = false;
     });
   }
@@ -72,6 +79,20 @@ class _ActivityHubScreenState extends State<ActivityHubScreen> {
     );
     if (result != true || !mounted) return;
     setState(() => _matchDone = true);
+  }
+
+  Future<void> _openPictureQuiz() async {
+    final result = await Navigator.push<PictureQuizResult>(
+      context,
+      MaterialPageRoute(
+        builder: (_) => PictureQuizScreen(book: widget.book),
+      ),
+    );
+    if (result == null || !mounted) return;
+    setState(() {
+      _pictureQuizCorrect = result.correct;
+      _pictureQuizTotal = result.total;
+    });
   }
 
   void _finish() {
@@ -124,13 +145,17 @@ class _ActivityHubScreenState extends State<ActivityHubScreen> {
                       onTap: _openMatchPairs,
                     ),
                     const SizedBox(height: 16),
-                    const _ActivityTile(
+                    _ActivityTile(
                       emoji: '🖼️',
                       title: '그림 퀴즈',
-                      subtitle: '곧 추가될 예정이에요',
-                      enabled: false,
-                      done: false,
-                      onTap: null,
+                      subtitle: _pictureQuizTotal != null
+                          ? '$_pictureQuizCorrect / $_pictureQuizTotal 맞혔어요'
+                          : _hasPictureQuiz
+                              ? '알맞은 그림을 골라보세요'
+                              : '곧 추가될 예정이에요',
+                      enabled: _hasPictureQuiz,
+                      done: _pictureQuizTotal != null,
+                      onTap: _openPictureQuiz,
                     ),
                     const Spacer(),
                     ElevatedButton(

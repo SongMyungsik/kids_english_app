@@ -1,0 +1,86 @@
+{
+  "book_id": 3,
+  "questions": [
+    {
+      "order": 0,
+      "question_en": "What material did Pig One use to build his house?",
+      "question_ko": "첫째 돼지가 집을 지을 때 사용한 재료는 무엇일까요?",
+      "choices": [
+        {
+          "emoji": "🌾",
+          "label_en": "Straw",
+          "correct": true
+        },
+        {
+          "emoji": "🪵",
+          "label_en": "Stick",
+          "correct": false
+        },
+        {
+          "emoji": "🧱",
+          "label_en": "Brick",
+          "correct": false
+        }
+      ],
+      "effect_text": "Swish!",
+      "q_start": 0.0,
+      "q_end": 4.787,
+      "effect_start": 4.787,
+      "effect_end": 7.013
+    },
+    {
+      "order": 1,
+      "question_en": "Which animal tried to blow the pigs' houses down?",
+      "question_ko": "아기 돼지들의 집을 날려버리려고 한 동물은 누구일까요?",
+      "choices": [
+        {
+          "emoji": "🐻",
+          "label_en": "Bear",
+          "correct": false
+        },
+        {
+          "emoji": "🐺",
+          "label_en": "Wolf",
+          "correct": true
+        },
+        {
+          "emoji": "🦊",
+          "label_en": "Fox",
+          "correct": false
+        }
+      ],
+      "effect_text": "Grrr!",
+      "q_start": 7.013,
+      "q_end": 11.512,
+      "effect_start": 11.512,
+      "effect_end": 13.475
+    },
+    {
+      "order": 2,
+      "question_en": "Which strong house never blew away, no matter how hard the wolf huffed?",
+      "question_ko": "늑대가 아무리 불어도 날아가지 않은 튼튼한 집은 무엇일까요?",
+      "choices": [
+        {
+          "emoji": "🌾",
+          "label_en": "Straw House",
+          "correct": false
+        },
+        {
+          "emoji": "🪵",
+          "label_en": "Stick House",
+          "correct": false
+        },
+        {
+          "emoji": "🧱",
+          "label_en": "Brick House",
+          "correct": true
+        }
+      ],
+      "effect_text": "Clang! Very strong!",
+      "q_start": 13.475,
+      "q_end": 19.475,
+      "effect_start": 19.475,
+      "effect_end": 22.8
+    }
+  ]
+}

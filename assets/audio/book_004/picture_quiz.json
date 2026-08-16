@@ -1,0 +1,86 @@
+{
+  "book_id": 4,
+  "questions": [
+    {
+      "order": 0,
+      "question_en": "Who planted the seeds and baked the bread all by herself?",
+      "question_ko": "열심히 씨앗을 심고 빵을 만든 동물은 누구일까요?",
+      "choices": [
+        {
+          "emoji": "🐔",
+          "label_en": "Hen",
+          "correct": true
+        },
+        {
+          "emoji": "🐶",
+          "label_en": "Dog",
+          "correct": false
+        },
+        {
+          "emoji": "🐱",
+          "label_en": "Cat",
+          "correct": false
+        }
+      ],
+      "effect_text": "Cluck, cluck!",
+      "q_start": 0.0,
+      "q_end": 5.0,
+      "effect_start": 5.0,
+      "effect_end": 7.75
+    },
+    {
+      "order": 1,
+      "question_en": "What did the Hen plant in the ground?",
+      "question_ko": "암탉이 땅에 심은 것은 무엇일까요?",
+      "choices": [
+        {
+          "emoji": "🍎",
+          "label_en": "Apple",
+          "correct": false
+        },
+        {
+          "emoji": "🌱",
+          "label_en": "Seed",
+          "correct": true
+        },
+        {
+          "emoji": "🌸",
+          "label_en": "Flower",
+          "correct": false
+        }
+      ],
+      "effect_text": "Grow!",
+      "q_start": 7.75,
+      "q_end": 11.338,
+      "effect_start": 11.338,
+      "effect_end": 13.375
+    },
+    {
+      "order": 2,
+      "question_en": "What tasty food did the Hen bake with the flour?",
+      "question_ko": "암탉이 밀가루로 구워낸 맛있는 음식은 무엇일까요?",
+      "choices": [
+        {
+          "emoji": "🍕",
+          "label_en": "Pizza",
+          "correct": false
+        },
+        {
+          "emoji": "🎂",
+          "label_en": "Cake",
+          "correct": false
+        },
+        {
+          "emoji": "🍞",
+          "label_en": "Bread",
+          "correct": true
+        }
+      ],
+      "effect_text": "Yum, yum!",
+      "q_start": 13.375,
+      "q_end": 17.75,
+      "effect_start": 17.75,
+      "effect_end": 19.738
+    }
+  ]
+}

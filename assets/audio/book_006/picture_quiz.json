@@ -1,0 +1,86 @@
+{
+  "book_id": 6,
+  "questions": [
+    {
+      "order": 0,
+      "question_en": "What animal did the boy look after on the hill?",
+      "question_ko": "소년이 언덕에서 돌보던 동물은 누구일까요?",
+      "choices": [
+        {
+          "emoji": "🐮",
+          "label_en": "Cow",
+          "correct": false
+        },
+        {
+          "emoji": "🐑",
+          "label_en": "Sheep",
+          "correct": true
+        },
+        {
+          "emoji": "🐷",
+          "label_en": "Pig",
+          "correct": false
+        }
+      ],
+      "effect_text": "Baa!",
+      "q_start": 0.0,
+      "q_end": 4.2,
+      "effect_start": 4.2,
+      "effect_end": 6.138
+    },
+    {
+      "order": 1,
+      "question_en": "Who came running when the boy cried wolf as a joke?",
+      "question_ko": "소년이 장난으로 거짓말을 쳤을 때 불러모은 사람들은 누구일까요?",
+      "choices": [
+        {
+          "emoji": "🧑‍🤝‍🧑",
+          "label_en": "Villagers",
+          "correct": true
+        },
+        {
+          "emoji": "🏴‍☠️",
+          "label_en": "Pirates",
+          "correct": false
+        },
+        {
+          "emoji": "👑",
+          "label_en": "Kings",
+          "correct": false
+        }
+      ],
+      "effect_text": "Huff, puff!",
+      "q_start": 6.138,
+      "q_end": 10.625,
+      "effect_start": 10.625,
+      "effect_end": 13.238
+    },
+    {
+      "order": 2,
+      "question_en": "How did the boy feel after lying so many times?",
+      "question_ko": "거짓말을 계속한 소년의 마음은 나중에 어떻게 되었을까요?",
+      "choices": [
+        {
+          "emoji": "😊",
+          "label_en": "Happy",
+          "correct": false
+        },
+        {
+          "emoji": "😢",
+          "label_en": "Sad",
+          "correct": true
+        },
+        {
+          "emoji": "😠",
+          "label_en": "Angry",
+          "correct": false
+        }
+      ],
+      "effect_text": "Boo hoo!",
+      "q_start": 13.238,
+      "q_end": 17.887,
+      "effect_start": 17.887,
+      "effect_end": 19.425
+    }
+  ]
+}

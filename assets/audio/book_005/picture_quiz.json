@@ -1,0 +1,89 @@
+{
+  "book_id": 5,
+  "questions": [
+    {
+      "order": 0,
+      "question_en": "How big was Baby Bear?",
+      "question_ko": "아기 곰(Baby Bear)의 크기는 어떠한가요?",
+      "choices": [
+        {
+          "emoji": "🐻",
+          "label_en": "Big",
+          "correct": false,
+          "emoji_size": 52
+        },
+        {
+          "emoji": "🐻",
+          "label_en": "Medium",
+          "correct": false,
+          "emoji_size": 38
+        },
+        {
+          "emoji": "🐻",
+          "label_en": "Small",
+          "correct": true,
+          "emoji_size": 24
+        }
+      ],
+      "effect_text": "Small!",
+      "q_start": 0.0,
+      "q_end": 3.087,
+      "effect_start": 3.087,
+      "effect_end": 5.275
+    },
+    {
+      "order": 1,
+      "question_en": "How was Baby Bear's soup that Goldilocks loved?",
+      "question_ko": "골디락스가 맛있게 먹은 아기 곰의 스프 상태는 어땠나요?",
+      "choices": [
+        {
+          "emoji": "🥵",
+          "label_en": "Too Hot",
+          "correct": false
+        },
+        {
+          "emoji": "🥶",
+          "label_en": "Too Cold",
+          "correct": false
+        },
+        {
+          "emoji": "😋",
+          "label_en": "Just Right",
+          "correct": true
+        }
+      ],
+      "effect_text": "Yummy!",
+      "q_start": 5.275,
+      "q_end": 9.9,
+      "effect_start": 9.9,
+      "effect_end": 12.0
+    },
+    {
+      "order": 2,
+      "question_en": "Where do the three bears live?",
+      "question_ko": "곰 가족이 살고 있는 집은 어디에 있을까요?",
+      "choices": [
+        {
+          "emoji": "🌲",
+          "label_en": "Forest",
+          "correct": true
+        },
+        {
+          "emoji": "🏖️",
+          "label_en": "Beach",
+          "correct": false
+        },
+        {
+          "emoji": "🏙️",
+          "label_en": "City",
+          "correct": false
+        }
+      ],
+      "effect_text": "Tweet, tweet!",
+      "q_start": 12.0,
+      "q_end": 15.287,
+      "effect_start": 15.287,
+      "effect_end": 17.3
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "book_id": 2,
+  "questions": [
+    {
+      "order": 0,
+      "question_en": "Who is the curious character exploring the house?",
+      "question_ko": "호기심이 많아서 집 안을 탐험하는 주인공은 누구일까요?",
+      "choices": [
+        {
+          "emoji": "🐶",
+          "label_en": "Dog",
+          "correct": false
+        },
+        {
+          "emoji": "🐱",
+          "label_en": "Cat",
+          "correct": true
+        },
+        {
+          "emoji": "🦆",
+          "label_en": "Duck",
+          "correct": false
+        }
+      ],
+      "effect_text": "Meow! I'm a Cat!",
+      "q_start": 0.0,
+      "q_end": 4.525,
+      "effect_start": 4.525,
+      "effect_end": 8.3
+    },
+    {
+      "order": 1,
+      "question_en": "What tiny animal friend did the cat find under the bed?",
+      "question_ko": "고양이가 침대 아래에서 숨바꼭질하며 찾은 조그만 동물 친구는 누구일까요?",
+      "choices": [
+        {
+          "emoji": "🐭",
+          "label_en": "Mouse",
+          "correct": true
+        },
+        {
+          "emoji": "🐷",
+          "label_en": "Pig",
+          "correct": false
+        },
+        {
+          "emoji": "🦁",
+          "label_en": "Lion",
+          "correct": false
+        }
+      ],
+      "effect_text": "Squeak, squeak!",
+      "q_start": 8.3,
+      "q_end": 13.225,
+      "effect_start": 13.225,
+      "effect_end": 16.188
+    },
+    {
+      "order": 2,
+      "question_en": "What warm white drink did the cat sip after exploring?",
+      "question_ko": "탐험을 마친 고양이가 홀짝홀짝 마신 따뜻하고 하얀 음료는 무엇일까요?",
+      "choices": [
+        {
+          "emoji": "💧",
+          "label_en": "Water",
+          "correct": false
+        },
+        {
+          "emoji": "🧃",
+          "label_en": "Juice",
+          "correct": false
+        },
+        {
+          "emoji": "🥛",
+          "label_en": "Milk",
+          "correct": true
+        }
+      ],
+      "effect_text": "Yummy milk!",
+      "q_start": 16.188,
+      "q_end": 21.225,
+      "effect_start": 21.225,
+      "effect_end": 23.038
+    }
+  ]
+}
