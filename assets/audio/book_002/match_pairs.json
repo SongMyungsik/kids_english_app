@@ -1,0 +1,31 @@
+{
+  "book_id": 2,
+  "completion_emoji": "🐱",
+  "completion_text": "Sweet!",
+  "pairs": [
+    {
+      "order": 0,
+      "emoji": "🐱",
+      "word_en": "Cat",
+      "word_ko": "고양이",
+      "start": 0.0,
+      "end": 0.463
+    },
+    {
+      "order": 1,
+      "emoji": "🐭",
+      "word_en": "Mouse",
+      "word_ko": "생쥐",
+      "start": 0.463,
+      "end": 1.6
+    },
+    {
+      "order": 2,
+      "emoji": "🥛",
+      "word_en": "Milk",
+      "word_ko": "우유",
+      "start": 1.6,
+      "end": 2.712
+    }
+  ]
+}

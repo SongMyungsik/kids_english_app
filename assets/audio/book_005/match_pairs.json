@@ -1,0 +1,31 @@
+{
+  "book_id": 5,
+  "completion_emoji": "❤️",
+  "completion_text": "Just right!",
+  "pairs": [
+    {
+      "order": 0,
+      "emoji": "🐻",
+      "word_en": "Bear",
+      "word_ko": "곰",
+      "start": 0.0,
+      "end": 0.5
+    },
+    {
+      "order": 1,
+      "emoji": "🍲",
+      "word_en": "Soup",
+      "word_ko": "스프",
+      "start": 0.5,
+      "end": 1.538
+    },
+    {
+      "order": 2,
+      "emoji": "🛏️",
+      "word_en": "Bed",
+      "word_ko": "침대",
+      "start": 1.538,
+      "end": 2.5
+    }
+  ]
+}

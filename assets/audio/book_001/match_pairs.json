@@ -1,0 +1,31 @@
+{
+  "book_id": 1,
+  "completion_emoji": "🐰🥕",
+  "completion_text": "Crunch!",
+  "pairs": [
+    {
+      "order": 0,
+      "emoji": "🐰",
+      "word_en": "Rabbit",
+      "word_ko": "토끼",
+      "start": 0.0,
+      "end": 0.55
+    },
+    {
+      "order": 1,
+      "emoji": "🥕",
+      "word_en": "Carrot",
+      "word_ko": "당근",
+      "start": 0.55,
+      "end": 1.663
+    },
+    {
+      "order": 2,
+      "emoji": "🦋",
+      "word_en": "Butterfly",
+      "word_ko": "나비",
+      "start": 1.663,
+      "end": 3.013
+    }
+  ]
+}

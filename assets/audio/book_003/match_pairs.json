@@ -1,5 +1,7 @@
 {
   "book_id": 3,
+  "completion_emoji": "🏠",
+  "completion_text": "Great job!",
   "pairs": [
     {
       "order": 0,

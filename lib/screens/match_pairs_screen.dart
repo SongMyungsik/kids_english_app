@@ -28,7 +28,10 @@ class _MatchPairsScreenState extends State<MatchPairsScreen> {
 
   String get _bookDir => 'book_${widget.book.id.toString().padLeft(3, '0')}';
   String get _wordsAudioPath => 'assets/audio/$_bookDir/match_pairs.mp3';
-  static const _sfxAudioPath = 'assets/audio/shared/great_job.mp3';
+  String get _sfxAudioPath => 'assets/audio/$_bookDir/match_complete.mp3';
+
+  String _completionEmoji = '🎉';
+  String _completionText = 'Great job!';
 
   @override
   void initState() {
@@ -52,6 +55,8 @@ class _MatchPairsScreenState extends State<MatchPairsScreen> {
       setState(() {
         _pairs = pairs;
         _shuffledWords = List.of(pairs)..shuffle(Random());
+        _completionEmoji = data['completion_emoji'] as String? ?? '🎉';
+        _completionText = data['completion_text'] as String? ?? 'Great job!';
         _isLoading = false;
       });
     } catch (_) {
@@ -79,7 +84,7 @@ class _MatchPairsScreenState extends State<MatchPairsScreen> {
     if (_matched.length == _pairs.length) {
       // _wordPlayer.play()가 재생 완료를 기다리지 않고 바로 반환하는
       // 백엔드도 있어(media_kit), 단어 길이만큼 명시적으로 기다린 뒤
-      // "Great job!"을 재생한다. 안 그러면 두 음성이 겹쳐서 나온다.
+      // 완료 음성을 재생한다. 안 그러면 두 음성이 겹쳐서 나온다.
       final wordDurationMs =
           ((pair.endTime - pair.startTime) * 1000).round();
       await Future.delayed(
@@ -119,14 +124,27 @@ class _MatchPairsScreenState extends State<MatchPairsScreen> {
                 child: AnimatedOpacity(
                   opacity: allMatched ? 1.0 : 0.25,
                   duration: const Duration(milliseconds: 400),
-                  child: const Text('🏠', style: TextStyle(fontSize: 64)),
+                  child: Text(
+                    _completionEmoji,
+                    style: const TextStyle(fontSize: 64),
+                  ),
                 ),
               ),
               const SizedBox(height: 4),
-              Text(
-                '${_matched.length} / ${_pairs.length}',
-                style: const TextStyle(fontSize: 16, color: Colors.grey),
-              ),
+              if (allMatched)
+                Text(
+                  _completionText,
+                  style: const TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.green,
+                  ),
+                )
+              else
+                Text(
+                  '${_matched.length} / ${_pairs.length}',
+                  style: const TextStyle(fontSize: 16, color: Colors.grey),
+                ),
               const SizedBox(height: 8),
               const Text(
                 '오른쪽 단어를 알맞은 그림으로 끌어다 놓아보세요!',
