@@ -1,14 +1,44 @@
 import 'package:flutter/material.dart';
 
+import '../services/launch_counter_service.dart';
 import 'bookshelf_screen.dart';
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
+
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  int? _loadCount;
+
+  @override
+  void initState() {
+    super.initState();
+    LaunchCounterService.incrementAndGet().then((count) {
+      if (mounted) setState(() => _loadCount = count);
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('영어 동화 읽기')),
+      appBar: AppBar(
+        title: const Text('영어 동화 읽기'),
+        actions: [
+          if (_loadCount != null)
+            Padding(
+              padding: const EdgeInsets.only(right: 16),
+              child: Center(
+                child: Text(
+                  '$_loadCount',
+                  style: TextStyle(fontSize: 12, color: Colors.grey.shade400),
+                ),
+              ),
+            ),
+        ],
+      ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -22,7 +52,8 @@ class HomeScreen extends StatelessWidget {
             const SizedBox(height: 24),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
-                padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
               ),
               onPressed: () {
                 Navigator.push(
