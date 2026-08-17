@@ -136,7 +136,8 @@ class _SentenceHighlighterState extends State<SentenceHighlighter> {
     }
 
     // 페이지 삽화가 있는 책: 같은 page 값을 가진 문장들을 한 그룹으로 묶어
-    // 그림과 나란히 보여준다. 그림은 페이지마다 좌우로 번갈아 배치한다.
+    // 그림을 가로폭 100%로 보여주고, 그 아래에 해당 페이지 문장을 이어서
+    // 보여준다.
     final pageOrder = <int>[];
     final pageItems = <int, List<int>>{};
     for (var i = 0; i < widget.sentences.length; i++) {
@@ -156,39 +157,28 @@ class _SentenceHighlighterState extends State<SentenceHighlighter> {
         final page = pageOrder[pageIdx];
         final imagePath = widget.pageImages[page];
         final indices = pageItems[page]!;
-        final imageOnLeft = pageIdx.isEven;
-
-        final image = imagePath == null
-            ? const SizedBox.shrink()
-            : Padding(
-                padding: const EdgeInsets.all(8),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(16),
-                  child: AspectRatio(
-                    aspectRatio: 1,
-                    child: Image.asset(imagePath, fit: BoxFit.cover),
-                  ),
-                ),
-              );
-
-        final textColumn = Column(
-          mainAxisSize: MainAxisSize.min,
-          children: indices.map(_buildSentenceCard).toList(),
-        );
 
         return Padding(
           padding: const EdgeInsets.only(bottom: 12),
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: imageOnLeft
-                ? [
-                    Expanded(child: image),
-                    Expanded(child: textColumn),
-                  ]
-                : [
-                    Expanded(child: textColumn),
-                    Expanded(child: image),
-                  ],
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              if (imagePath != null)
+                Padding(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 16,
+                    vertical: 8,
+                  ),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(16),
+                    child: AspectRatio(
+                      aspectRatio: 1,
+                      child: Image.asset(imagePath, fit: BoxFit.cover),
+                    ),
+                  ),
+                ),
+              ...indices.map(_buildSentenceCard),
+            ],
           ),
         );
       },
