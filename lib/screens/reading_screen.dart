@@ -85,6 +85,7 @@ class _ReadingScreenState extends State<ReadingScreen> {
                 child: SentenceHighlighter(
                   sentences: provider.sentences,
                   currentIndex: provider.currentSentenceIndex,
+                  pageImages: provider.pageImages,
                   showReplayButton: _listenMode == ListenMode.sentence,
                   onReplay: (sentence) => provider.playSentenceOnly(sentence),
                   onTapSentence: (sentence) {

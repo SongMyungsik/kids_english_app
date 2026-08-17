@@ -16,6 +16,7 @@ class ReadingProvider extends ChangeNotifier {
   bool _isClipLoaded = false;
 
   List<SentenceModel> sentences = [];
+  Map<int, String> pageImages = {};
   int currentSentenceIndex = 0;
   bool isPlaying = false;
   bool isLoading = false;
@@ -23,6 +24,7 @@ class ReadingProvider extends ChangeNotifier {
   Future<void> loadBook(Book book) async {
     isLoading = true;
     currentSentenceIndex = 0;
+    pageImages = {};
     notifyListeners();
 
     try {
@@ -38,6 +40,13 @@ class ReadingProvider extends ChangeNotifier {
           .map((e) => SentenceModel.fromJson(e as Map<String, dynamic>))
           .toList();
       debugPrint('[ReadingProvider] parsed ${sentences.length} sentences');
+
+      // 페이지 삽화가 있는 책이면 페이지 번호 -> 이미지 경로 맵을 만든다.
+      final rawPages = data['pages'] as List<dynamic>?;
+      pageImages = {
+        for (final p in rawPages ?? <dynamic>[])
+          (p as Map<String, dynamic>)['page'] as int: p['image'] as String,
+      };
 
       // 2) 오디오 로드
       _audioPath = book.audioPath;
