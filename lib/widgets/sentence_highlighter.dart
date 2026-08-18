@@ -171,9 +171,14 @@ class _SentenceHighlighterState extends State<SentenceHighlighter> {
                   ),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(16),
-                    child: AspectRatio(
-                      aspectRatio: 1,
-                      child: Image.asset(imagePath, fit: BoxFit.cover),
+                    // 그림마다 원본 비율이 달라 고정 비율로 자르면 잘려나가는
+                    // 부분이 생긴다. 가로폭만 꽉 채우고 높이는 원본 비율대로
+                    // 자연스럽게 정해지도록 둔다(잘림 없음, 페이지마다 높이는
+                    // 달라질 수 있음).
+                    child: Image.asset(
+                      imagePath,
+                      width: double.infinity,
+                      fit: BoxFit.fitWidth,
                     ),
                   ),
                 ),
