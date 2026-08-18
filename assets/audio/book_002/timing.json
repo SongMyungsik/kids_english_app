@@ -6,168 +6,214 @@
       "text_en": "A little cat lives in a cozy house.",
       "text_ko": "작은 고양이가 아늑한 집에 살아요.",
       "start": 0.0,
-      "end": 3.75
+      "end": 3.75,
+      "page": 0
     },
     {
       "order": 1,
       "text_en": "Her name is Kitty.",
       "text_ko": "이름은 키티예요.",
       "start": 3.75,
-      "end": 6.3
+      "end": 6.3,
+      "page": 0
     },
     {
       "order": 2,
       "text_en": "Kitty is very curious.",
       "text_ko": "키티는 호기심이 정말 많아요.",
       "start": 6.3,
-      "end": 9.475
+      "end": 9.475,
+      "page": 0
     },
     {
       "order": 3,
       "text_en": "She likes to explore everything!",
       "text_ko": "모든 것을 탐험하는 걸 좋아해요!",
       "start": 9.475,
-      "end": 13.012
+      "end": 13.012,
+      "page": 0
     },
     {
       "order": 4,
       "text_en": "\"Meow! What is that?\"",
       "text_ko": "\"야옹! 저게 뭐지?\"",
       "start": 13.012,
-      "end": 16.575
+      "end": 16.575,
+      "page": 0
     },
     {
       "order": 5,
       "text_en": "Kitty walks into the bedroom.",
       "text_ko": "키티가 침실로 걸어 들어가요.",
       "start": 16.575,
-      "end": 19.7
+      "end": 19.7,
+      "page": 1
     },
     {
       "order": 6,
       "text_en": "She looks under the big bed.",
       "text_ko": "커다란 침대 아래를 들여다봐요.",
       "start": 19.7,
-      "end": 22.812
+      "end": 22.812,
+      "page": 1
     },
     {
       "order": 7,
       "text_en": "Two shiny eyes pop out!",
       "text_ko": "반짝이는 두 눈이 쏙 나타나요!",
       "start": 22.812,
-      "end": 25.988
+      "end": 25.988,
+      "page": 1
     },
     {
       "order": 8,
       "text_en": "\"Squeak, squeak!\" A tiny mouse runs away.",
       "text_ko": "\"찍찍!\" 조그만 생쥐가 달아나요.",
       "start": 25.988,
-      "end": 31.387
+      "end": 31.387,
+      "page": 1
     },
     {
       "order": 9,
       "text_en": "Kitty laughs, \"Meow! Hello, Mouse!\"",
       "text_ko": "키티가 웃어요. \"야옹! 안녕, 생쥐야!\"",
       "start": 31.387,
-      "end": 36.45
+      "end": 36.45,
+      "page": 1
     },
     {
       "order": 10,
       "text_en": "Kitty hops up to the window.",
       "text_ko": "키티가 창가로 깡충 올라가요.",
       "start": 36.45,
-      "end": 39.587
+      "end": 39.587,
+      "page": 2
     },
     {
       "order": 11,
       "text_en": "She touches a clear glass bowl with her paw.",
       "text_ko": "맑은 유리병을 앞발로 툭 건드려요.",
       "start": 39.587,
-      "end": 43.712
+      "end": 43.712,
+      "page": 2
     },
     {
       "order": 12,
       "text_en": "Clink, clink!",
       "text_ko": "챙, 챙!",
       "start": 43.712,
-      "end": 46.35
+      "end": 46.35,
+      "page": 2
     },
     {
       "order": 13,
       "text_en": "\"Oh, it sparkles!\" Kitty purrs.",
       "text_ko": "\"와, 반짝거리네!\" 키티가 골골송을 불러요.",
       "start": 46.35,
-      "end": 50.987
+      "end": 50.987,
+      "page": 2
     },
     {
       "order": 14,
       "text_en": "She loves the shiny light.",
       "text_ko": "반짝이는 빛을 정말 좋아해요.",
       "start": 50.987,
-      "end": 54.087
+      "end": 54.087,
+      "page": 2
     },
     {
       "order": 15,
       "text_en": "Kitty's tummy goes Rumble!",
       "text_ko": "키티의 배에서 꼬르륵 소리가 나요!",
       "start": 54.087,
-      "end": 57.2
+      "end": 57.2,
+      "page": 3
     },
     {
       "order": 16,
       "text_en": "She goes to the kitchen.",
       "text_ko": "키티가 주방으로 가요.",
       "start": 57.2,
-      "end": 59.962
+      "end": 59.962,
+      "page": 3
     },
     {
       "order": 17,
       "text_en": "There is a bowl of warm white milk.",
       "text_ko": "따뜻하고 하얀 우유 한 대접이 있어요.",
       "start": 59.962,
-      "end": 63.612
+      "end": 63.612,
+      "page": 3
     },
     {
       "order": 18,
       "text_en": "Lick, lick, lick!",
       "text_ko": "할짝, 할짝, 할짝!",
       "start": 63.612,
-      "end": 66.588
+      "end": 66.588,
+      "page": 3
     },
     {
       "order": 19,
       "text_en": "\"Yummy milk!\" Kitty says.",
       "text_ko": "\"맛있는 우유다!\" 키티가 말해요.",
       "start": 66.588,
-      "end": 70.638
+      "end": 70.638,
+      "page": 3
     },
     {
       "order": 20,
       "text_en": "Now, Kitty is full and tired.",
       "text_ko": "이제 키티는 배가 부르고 피곤해요.",
       "start": 70.638,
-      "end": 74.375
+      "end": 74.375,
+      "page": 4
     },
     {
       "order": 21,
       "text_en": "She curls up on a soft pillow.",
       "text_ko": "푹신한 베개 위에 동그랗게 몸을 말아요.",
       "start": 74.375,
-      "end": 77.825
+      "end": 77.825,
+      "page": 4
     },
     {
       "order": 22,
       "text_en": "\"Purr, purr... Good night!\"",
       "text_ko": "\"골골... 잘 자요!\"",
       "start": 77.825,
-      "end": 81.737
+      "end": 81.737,
+      "page": 4
     },
     {
       "order": 23,
       "text_en": "The curious cat goes to sleep.",
       "text_ko": "호기심 많은 고양이는 잠에 든답니다.",
       "start": 81.737,
-      "end": 84.675
+      "end": 84.675,
+      "page": 4
+    }
+  ],
+  "pages": [
+    {
+      "page": 0,
+      "image": "assets/images/books/book_002-1.png"
+    },
+    {
+      "page": 1,
+      "image": "assets/images/books/book_002-2.png"
+    },
+    {
+      "page": 2,
+      "image": "assets/images/books/book_002-3.png"
+    },
+    {
+      "page": 3,
+      "image": "assets/images/books/book_002-4.png"
+    },
+    {
+      "page": 4,
+      "image": "assets/images/books/book_002-5.png"
     }
   ]
 }
