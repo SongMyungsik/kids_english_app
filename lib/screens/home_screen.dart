@@ -54,7 +54,14 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Icon(Icons.auto_stories, size: 96, color: Colors.orange),
+            ClipRRect(
+              borderRadius: BorderRadius.circular(16),
+              child: Image.asset(
+                'assets/images/covers/book_001.png',
+                width: 200,
+                fit: BoxFit.contain,
+              ),
+            ),
             const SizedBox(height: 16),
             const Text(
               '오늘은 어떤 동화를 읽어볼까요?',
