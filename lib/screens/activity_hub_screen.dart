@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 
 import '../models/book.dart';
+import '../services/sticker_service.dart';
 import 'complete_screen.dart';
 import 'match_pairs_screen.dart';
 import 'ox_quiz_screen.dart';
@@ -95,7 +96,16 @@ class _ActivityHubScreenState extends State<ActivityHubScreen> {
     });
   }
 
-  void _finish() {
+  Future<void> _finish() async {
+    final quizDone = _quizTotal != null;
+    StickerAward? stickerAward;
+    if (quizDone) {
+      stickerAward = await StickerService().awardSticker(
+        bookId: widget.book.id,
+        bookTitle: widget.book.title,
+      );
+    }
+    if (!mounted) return;
     Navigator.pushReplacement(
       context,
       MaterialPageRoute(
@@ -103,6 +113,7 @@ class _ActivityHubScreenState extends State<ActivityHubScreen> {
           book: widget.book,
           quizCorrect: _quizCorrect,
           quizTotal: _quizTotal,
+          stickerAward: stickerAward,
         ),
       ),
     );

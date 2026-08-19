@@ -48,6 +48,7 @@ flutter:
     - assets/audio/book_006/
     - assets/images/covers/
     - assets/images/books/
+    - assets/audio/ui/
 
 flutter_launcher_icons:
   image_path: "assets/icon/app_icon.png"

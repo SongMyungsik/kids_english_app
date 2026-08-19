@@ -8,6 +8,16 @@ import 'package:path_provider/path_provider.dart';
 class DBHelper {
   static Database? _db;
 
+  static const _createStickersTableSql = '''
+    CREATE TABLE stickers (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      book_id INTEGER NOT NULL,
+      book_title TEXT NOT NULL,
+      earned_at TEXT NOT NULL,
+      emoji TEXT NOT NULL DEFAULT '⭐'
+    )
+  ''';
+
   static Future<Database> get database async {
     if (_db != null) return _db!;
     _db = await _initDB();
@@ -32,7 +42,7 @@ class DBHelper {
 
     return openDatabase(
       path,
-      version: 1,
+      version: 3,
       onCreate: (db, version) async {
         await db.execute('''
           CREATE TABLE books (
@@ -52,6 +62,18 @@ class DBHelper {
             last_read_at TEXT
           )
         ''');
+
+        await db.execute(_createStickersTableSql);
+      },
+      onUpgrade: (db, oldVersion, newVersion) async {
+        if (oldVersion < 2) {
+          await db.execute(_createStickersTableSql);
+        }
+        if (oldVersion == 2) {
+          await db.execute(
+            "ALTER TABLE stickers ADD COLUMN emoji TEXT NOT NULL DEFAULT '⭐'",
+          );
+        }
       },
     );
   }

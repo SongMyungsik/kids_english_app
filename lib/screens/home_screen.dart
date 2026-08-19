@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../services/launch_counter_service.dart';
 import 'bookshelf_screen.dart';
+import 'sticker_board_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -27,6 +28,16 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(
         title: const Text('영어 동화 읽기'),
         actions: [
+          IconButton(
+            icon: const Text('⭐', style: TextStyle(fontSize: 20)),
+            tooltip: '내 스티커판',
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (_) => const StickerBoardScreen()),
+              );
+            },
+          ),
           if (_loadCount != null)
             Padding(
               padding: const EdgeInsets.only(right: 16),
