@@ -79,13 +79,18 @@ class DBHelper {
   }
 
   /// seedBooks에 있지만 아직 DB에 없는 동화책을 채워 넣는다.
-  /// (id가 이미 있으면 건너뛰므로, 새 책을 seed_books.dart에 추가하는 것만으로
-  /// 기존 설치에도 반영된다.)
+  /// id가 이미 있으면 seed_books.dart의 최신 값으로 덮어써서, 표지/제목 등을
+  /// 고쳐도 기존 설치에 바로 반영된다. (user_progress/stickers는 별도 테이블이라
+  /// 영향받지 않는다.)
   static Future<void> seedIfEmpty(List<Map<String, dynamic>> seedBooks) async {
     final db = await database;
     final batch = db.batch();
     for (final book in seedBooks) {
-      batch.insert('books', book, conflictAlgorithm: ConflictAlgorithm.ignore);
+      batch.insert(
+        'books',
+        book,
+        conflictAlgorithm: ConflictAlgorithm.replace,
+      );
     }
     await batch.commit(noResult: true);
   }
