@@ -1,0 +1,143 @@
+{
+  "book_id": 12,
+  "sentences": [
+    {
+      "order": 0,
+      "text_en": "Daniel is a wise and honest man.",
+      "text_ko": "다니엘은 지혜롭고 정직한 사람이에요.",
+      "start": 0.0,
+      "end": 3.75,
+      "page": 0
+    },
+    {
+      "order": 1,
+      "text_en": "He loves God deeply and prays to Him three times every day by his open window.",
+      "text_ko": "그는 하나님을 깊이 사랑하고, 열린 창가에서 하루에 세 번씩 하나님께 기도해요.",
+      "start": 3.75,
+      "end": 10.475,
+      "page": 0
+    },
+    {
+      "order": 2,
+      "text_en": "Some bad men are jealous of Daniel.",
+      "text_ko": "몇몇 나쁜 사람들이 다니엘을 질투해요.",
+      "start": 10.475,
+      "end": 14.412,
+      "page": 0
+    },
+    {
+      "order": 3,
+      "text_en": "They trick the king into making a foolish law: \"No one can pray to anyone except the king!\"",
+      "text_ko": "그들은 왕을 속여 어리석은 법을 만들게 해요. \"누구든지 왕 외에 다른 이에게 기도하면 안 됩니다!\"",
+      "start": 14.412,
+      "end": 21.425,
+      "page": 0
+    },
+    {
+      "order": 4,
+      "text_en": "Daniel hears the law, but he still prays to God with a thankful heart.",
+      "text_ko": "다니엘은 그 법을 듣지만, 여전히 감사한 마음으로 하나님께 기도해요.",
+      "start": 21.425,
+      "end": 27.337,
+      "page": 1
+    },
+    {
+      "order": 5,
+      "text_en": "The bad men catch him and throw him into a dark cave full of hungry lions.",
+      "text_ko": "나쁜 사람들은 그를 붙잡아 배고픈 사자들로 가득한 어두운 굴에 던져 넣어요.",
+      "start": 27.337,
+      "end": 33.612,
+      "page": 1
+    },
+    {
+      "order": 6,
+      "text_en": "Roar!",
+      "text_ko": "어흥!",
+      "start": 33.612,
+      "end": 35.438,
+      "page": 1
+    },
+    {
+      "order": 7,
+      "text_en": "Oh, Daniel!",
+      "text_ko": "오, 다니엘아!",
+      "start": 35.438,
+      "end": 37.9,
+      "page": 2
+    },
+    {
+      "order": 8,
+      "text_en": "I hope your God can save you!",
+      "text_ko": "너의 하나님이 너를 구할 수 있기를 바란다!",
+      "start": 37.9,
+      "end": 41.175,
+      "page": 2
+    },
+    {
+      "order": 9,
+      "text_en": "The king is very sad.",
+      "text_ko": "왕은 아주 슬퍼해요.",
+      "start": 41.175,
+      "end": 44.225,
+      "page": 3
+    },
+    {
+      "order": 10,
+      "text_en": "But down in the cave, God sends a bright angel to close the lions' big, scary mouths.",
+      "text_ko": "하지만 굴 아래에서는, 하나님께서 빛나는 천사를 보내어 사자들의 크고 무서운 입을 꾹 닫게 하셔요.",
+      "start": 44.225,
+      "end": 51.65,
+      "page": 3
+    },
+    {
+      "order": 11,
+      "text_en": "I am safe and peaceful.",
+      "text_ko": "나는 안전하고 평안해요.",
+      "start": 51.65,
+      "end": 54.663,
+      "page": 3
+    },
+    {
+      "order": 12,
+      "text_en": "God sent His angel to protect me!",
+      "text_ko": "하나님이 내게 천사를 보내어 나를 지켜주셨어요!",
+      "start": 54.663,
+      "end": 58.325,
+      "page": 3
+    },
+    {
+      "order": 13,
+      "text_en": "The next morning, the king pulls Daniel out safely.",
+      "text_ko": "다음 날 아침, 왕이 다니엘을 안전하게 끌어내요.",
+      "start": 58.325,
+      "end": 63.288,
+      "page": 3
+    },
+    {
+      "order": 14,
+      "text_en": "Everyone praises the living God!",
+      "text_ko": "모든 사람이 살아계신 하나님을 찬양해요!",
+      "start": 63.288,
+      "end": 66.3,
+      "page": 3
+    }
+  ],
+  "pages": [
+    {
+      "page": 0,
+      "image": "assets/images/books/book_012_1.png"
+    },
+    {
+      "page": 1,
+      "image": "assets/images/books/book_012_2.png"
+    },
+    {
+      "page": 2,
+      "image": "assets/images/books/book_012_3.png"
+    },
+    {
+      "page": 3,
+      "image": "assets/images/books/book_012_4.png"
+    }
+  ]
+}

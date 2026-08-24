@@ -1,0 +1,167 @@
+{
+  "book_id": 11,
+  "sentences": [
+    {
+      "order": 0,
+      "text_en": "The big giant Goliath stands in front of the Israel army.",
+      "text_ko": "커다란 거인 골리앗이 이스라엘 군대 앞에 서 있어요.",
+      "start": 0.0,
+      "end": 5.162,
+      "page": 0
+    },
+    {
+      "order": 1,
+      "text_en": "He wears heavy iron armor and holds a big spear.",
+      "text_ko": "그는 무거운 철갑옷을 입고 커다란 창을 들고 있어요.",
+      "start": 5.162,
+      "end": 9.95,
+      "page": 0
+    },
+    {
+      "order": 2,
+      "text_en": "Ha, ha, ha!",
+      "text_ko": "하, 하, 하!",
+      "start": 9.95,
+      "end": 12.787,
+      "page": 1
+    },
+    {
+      "order": 3,
+      "text_en": "Send me your best soldier!",
+      "text_ko": "너희의 가장 좋은 군사를 내게 보내라!",
+      "start": 12.787,
+      "end": 15.938,
+      "page": 1
+    },
+    {
+      "order": 4,
+      "text_en": "I am the strongest!",
+      "text_ko": "내가 가장 강하다!",
+      "start": 15.938,
+      "end": 18.775,
+      "page": 1
+    },
+    {
+      "order": 5,
+      "text_en": "All the soldiers are scared and hide behind the rocks.",
+      "text_ko": "모든 군인들은 무서워서 바위 뒤에 숨어요.",
+      "start": 18.775,
+      "end": 23.6,
+      "page": 2
+    },
+    {
+      "order": 6,
+      "text_en": "But young shepherd David is not afraid at all.",
+      "text_ko": "하지만 어린 목동 다윗은 전혀 무섭지 않아요.",
+      "start": 23.6,
+      "end": 27.975,
+      "page": 2
+    },
+    {
+      "order": 7,
+      "text_en": "Do not be afraid!",
+      "text_ko": "두려워하지 마세요!",
+      "start": 27.975,
+      "end": 30.575,
+      "page": 3
+    },
+    {
+      "order": 8,
+      "text_en": "God is with us.",
+      "text_ko": "하나님이 우리와 함께 계셔요.",
+      "start": 30.575,
+      "end": 33.125,
+      "page": 3
+    },
+    {
+      "order": 9,
+      "text_en": "I will fight the giant with the name of the Lord!",
+      "text_ko": "나는 하나님의 이름으로 저 거인과 싸울 거예요!",
+      "start": 33.125,
+      "end": 37.288,
+      "page": 3
+    },
+    {
+      "order": 10,
+      "text_en": "David takes five smooth stones from the stream.",
+      "text_ko": "다윗은 시냇물에서 매끄러운 돌멩이 다섯 개를 골라요.",
+      "start": 37.288,
+      "end": 41.788,
+      "page": 4
+    },
+    {
+      "order": 11,
+      "text_en": "He puts one stone in his sling and swings it round and round.",
+      "text_ko": "그는 돌 하나를 물매에 넣고 빙글빙글 돌려요.",
+      "start": 41.788,
+      "end": 47.225,
+      "page": 4
+    },
+    {
+      "order": 12,
+      "text_en": "Swish!",
+      "text_ko": "휙!",
+      "start": 47.225,
+      "end": 49.25,
+      "page": 5
+    },
+    {
+      "order": 13,
+      "text_en": "Zoom!",
+      "text_ko": "슝!",
+      "start": 49.25,
+      "end": 51.125,
+      "page": 5
+    },
+    {
+      "order": 14,
+      "text_en": "The stone flies fast through the air and hits the giant right on the head.",
+      "text_ko": "돌이 공기를 가르며 빠르게 날아가 거인의 머리에 쾅 부딪혀요.",
+      "start": 51.125,
+      "end": 56.875,
+      "page": 5
+    },
+    {
+      "order": 15,
+      "text_en": "Down goes the giant with a loud crash!",
+      "text_ko": "거인이 큰 소리를 내며 쿵 쓰러져요!",
+      "start": 56.875,
+      "end": 60.9,
+      "page": 5
+    },
+    {
+      "order": 16,
+      "text_en": "God gives His people a big victory.",
+      "text_ko": "하나님께서 백성들에게 큰 승리를 주셔요.",
+      "start": 60.9,
+      "end": 64.075,
+      "page": 5
+    }
+  ],
+  "pages": [
+    {
+      "page": 0,
+      "image": "assets/images/books/book_011_1.png"
+    },
+    {
+      "page": 1,
+      "image": "assets/images/books/book_011_2.png"
+    },
+    {
+      "page": 2,
+      "image": "assets/images/books/book_011_3.png"
+    },
+    {
+      "page": 3,
+      "image": "assets/images/books/book_011_4.png"
+    },
+    {
+      "page": 4,
+      "image": "assets/images/books/book_011_5.png"
+    },
+    {
+      "page": 5,
+      "image": "assets/images/books/book_011_6.png"
+    }
+  ]
+}

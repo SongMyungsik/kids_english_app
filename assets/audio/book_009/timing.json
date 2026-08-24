@@ -1,0 +1,131 @@
+{
+  "book_id": 9,
+  "sentences": [
+    {
+      "order": 0,
+      "text_en": "A wicked king makes a cruel rule against God's people.",
+      "text_ko": "나쁜 왕이 하나님의 백성들을 향한 잔인한 법을 만들어요.",
+      "start": 0.0,
+      "end": 4.963,
+      "page": 0
+    },
+    {
+      "order": 1,
+      "text_en": "A brave mother hides her sweet baby boy for three months.",
+      "text_ko": "한 용감한 어머니가 예쁜 아기 아들을 석 달 동안 숨겨요.",
+      "start": 4.963,
+      "end": 10.175,
+      "page": 0
+    },
+    {
+      "order": 2,
+      "text_en": "But she cannot hide him any longer.",
+      "text_ko": "하지만 더 이상 숨길 수가 없어요.",
+      "start": 10.175,
+      "end": 13.787,
+      "page": 0
+    },
+    {
+      "order": 3,
+      "text_en": "She makes a little basket with reeds, puts baby Moses inside, and places it gently by the river.",
+      "text_ko": "어머니는 갈대로 작은 바구니를 만들고 아기 모세를 그 안에 담아 강가에 조용히 띄워셔요.",
+      "start": 13.787,
+      "end": 22.062,
+      "page": 0
+    },
+    {
+      "order": 4,
+      "text_en": "Moses' big sister, Miriam, stands far away to watch.",
+      "text_ko": "모세의 누나 미리암이 멀리서 서서 지켜봐요.",
+      "start": 22.062,
+      "end": 27.863,
+      "page": 1
+    },
+    {
+      "order": 5,
+      "text_en": "Don't worry, baby brother.",
+      "text_ko": "걱정 마, 아기 동생아.",
+      "start": 27.863,
+      "end": 31.125,
+      "page": 1
+    },
+    {
+      "order": 6,
+      "text_en": "God will keep you safe.",
+      "text_ko": "하나님이 너를 안전하게 지켜주실 거야.",
+      "start": 31.125,
+      "end": 33.938,
+      "page": 1
+    },
+    {
+      "order": 7,
+      "text_en": "Soon, the king's daughter comes down to swim in the river.",
+      "text_ko": "잠시후, 왕의 딸이 강으로 수영하러 내려와요.",
+      "start": 33.938,
+      "end": 38.962,
+      "page": 2
+    },
+    {
+      "order": 8,
+      "text_en": "She opens the basket and sees the crying baby.",
+      "text_ko": "그녀가 바구니를 열고 우는 아기를 봐요.",
+      "start": 38.962,
+      "end": 43.425,
+      "page": 2
+    },
+    {
+      "order": 9,
+      "text_en": "Her heart melts with love.",
+      "text_ko": "그녀의 마음이 사랑으로 사르르 녹아요.",
+      "start": 43.425,
+      "end": 46.55,
+      "page": 2
+    },
+    {
+      "order": 10,
+      "text_en": "What a precious baby!",
+      "text_ko": "정말 소중한 아기구나!",
+      "start": 46.55,
+      "end": 49.35,
+      "page": 2
+    },
+    {
+      "order": 11,
+      "text_en": "I will name him Moses, and he will be my own son.",
+      "text_ko": "내가 이름을 모세라고 지어줄 테고, 내 아들로 삼을 거야.",
+      "start": 49.35,
+      "end": 54.25,
+      "page": 2
+    },
+    {
+      "order": 12,
+      "text_en": "God watches over baby Moses.",
+      "text_ko": "하나님이 아기 모세를 지켜보셔요.",
+      "start": 54.25,
+      "end": 57.875,
+      "page": 2
+    },
+    {
+      "order": 13,
+      "text_en": "He grows up to lead His people to freedom!",
+      "text_ko": "그는 자라서 백성들을 자유로 이끄는 지도자가 돼요!",
+      "start": 57.875,
+      "end": 61.362,
+      "page": 2
+    }
+  ],
+  "pages": [
+    {
+      "page": 0,
+      "image": "assets/images/books/book_009_1.png"
+    },
+    {
+      "page": 1,
+      "image": "assets/images/books/book_009_2.png"
+    },
+    {
+      "page": 2,
+      "image": "assets/images/books/book_009_3.png"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "book_id": 8,
+  "sentences": [
+    {
+      "order": 0,
+      "text_en": "Jacob loves his son Joseph very much.",
+      "text_ko": "야곱은 아들 요셉을 아주 많이 사랑해요.",
+      "start": 0.0,
+      "end": 4.175,
+      "page": 0
+    },
+    {
+      "order": 1,
+      "text_en": "He gives him a special coat with many beautiful colors: red, blue, and yellow.",
+      "text_ko": "그는 요셉에게 빨갛고, 파랗고, 노란색이 들어간 아름다운 색동옷을 선물해 주어요.",
+      "start": 4.175,
+      "end": 11.287,
+      "page": 0
+    },
+    {
+      "order": 2,
+      "text_en": "One night, God gives Joseph special dreams about the future.",
+      "text_ko": "어느 날 밤, 하나님께서 요셉에게 미래에 대한 특별한 꿈을 주셔요.",
+      "start": 11.287,
+      "end": 16.775,
+      "page": 0
+    },
+    {
+      "order": 3,
+      "text_en": "Listen to my dream, my brothers!",
+      "text_ko": "내 꿈 좀 들어보세요, 형들!",
+      "start": 16.775,
+      "end": 20.587,
+      "page": 0
+    },
+    {
+      "order": 4,
+      "text_en": "We were tying wheat in the field, and your wheat bowed down to my wheat!",
+      "text_ko": "우리가 들판에서 곡식을 묶고 있는데, 형들의 곡식 단이 내 곡식 단에게 절을 했어요!",
+      "start": 20.587,
+      "end": 26.262,
+      "page": 0
+    },
+    {
+      "order": 5,
+      "text_en": "Joseph's brothers are very angry and jealous.",
+      "text_ko": "요셉의 형들은 아주 화가 나고 질투가 나요.",
+      "start": 26.262,
+      "end": 30.738,
+      "page": 1
+    },
+    {
+      "order": 6,
+      "text_en": "One day, they put him into a dark, empty pit and sell him as a slave.",
+      "text_ko": "어느 날, 형들은 요셉을 어둡고 텅 빈 구덩이에 넣고 종으로 팔아버려요.",
+      "start": 30.738,
+      "end": 37.1,
+      "page": 1
+    },
+    {
+      "order": 7,
+      "text_en": "Oh, poor Joseph!",
+      "text_ko": "오, 불쌍한 요셉!",
+      "start": 37.1,
+      "end": 39.95,
+      "page": 1
+    },
+    {
+      "order": 8,
+      "text_en": "But God is always with Joseph in Egypt.",
+      "text_ko": "하지만 하나님은 이집트에서도 늘 요셉과 함께하셔요.",
+      "start": 39.95,
+      "end": 44.188,
+      "page": 2
+    },
+    {
+      "order": 9,
+      "text_en": "Later, a big famine comes, and Joseph saves his whole family with kindness and wisdom.",
+      "text_ko": "나중에 큰 흉년이 찾아오고, 요셉은 친절과 지혜로 온 가족을 구해요.",
+      "start": 44.188,
+      "end": 52.0,
+      "page": 2
+    },
+    {
+      "order": 10,
+      "text_en": "God turns a sad story into a happy ending!",
+      "text_ko": "하나님은 슬픈 이야기를 해피엔딩으로 바꾸어 주셔요!",
+      "start": 52.0,
+      "end": 56.013,
+      "page": 2
+    }
+  ],
+  "pages": [
+    {
+      "page": 0,
+      "image": "assets/images/books/book_008_1.png"
+    },
+    {
+      "page": 1,
+      "image": "assets/images/books/book_008_2.png"
+    },
+    {
+      "page": 2,
+      "image": "assets/images/books/book_008_3.png"
+    }
+  ]
+}

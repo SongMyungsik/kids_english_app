@@ -1,0 +1,167 @@
+{
+  "book_id": 7,
+  "sentences": [
+    {
+      "order": 0,
+      "text_en": "The world is full of bad things.",
+      "text_ko": "세상이 나쁜 일로 가득해요.",
+      "start": 0.0,
+      "end": 3.575,
+      "page": 0
+    },
+    {
+      "order": 1,
+      "text_en": "People forget about God.",
+      "text_ko": "사람들은 하나님을 잊어버렸어요.",
+      "start": 3.575,
+      "end": 6.537,
+      "page": 0
+    },
+    {
+      "order": 2,
+      "text_en": "But Noah is a good man.",
+      "text_ko": "하지만 노아는 착한 사람이에요.",
+      "start": 6.537,
+      "end": 9.562,
+      "page": 0
+    },
+    {
+      "order": 3,
+      "text_en": "He loves and obeys God every day.",
+      "text_ko": "그는 매일 하나님을 사랑하고 순종해요.",
+      "start": 9.562,
+      "end": 13.325,
+      "page": 0
+    },
+    {
+      "order": 4,
+      "text_en": "Noah, build a giant boat!",
+      "text_ko": "노아, 커다란 배를 지어라!",
+      "start": 13.325,
+      "end": 16.7,
+      "page": 1
+    },
+    {
+      "order": 5,
+      "text_en": "A big flood is coming to wash the world.",
+      "text_ko": "세상을 씻어낼 큰 홍수가 올 것이다.",
+      "start": 16.7,
+      "end": 20.675,
+      "page": 1
+    },
+    {
+      "order": 6,
+      "text_en": "Bring your family and all the animals inside!",
+      "text_ko": "너희 가족과 모든 동물들을 안으로 데려오거라!",
+      "start": 20.675,
+      "end": 25.025,
+      "page": 1
+    },
+    {
+      "order": 7,
+      "text_en": "Noah works hard for many days.",
+      "text_ko": "노아는 여러 날 동안 열심히 일해요.",
+      "start": 25.025,
+      "end": 28.625,
+      "page": 2
+    },
+    {
+      "order": 8,
+      "text_en": "He cuts the wood and builds a huge ark.",
+      "text_ko": "나무를 자르고 커다란 방주를 지어요.",
+      "start": 28.625,
+      "end": 32.663,
+      "page": 2
+    },
+    {
+      "order": 9,
+      "text_en": "People laugh at him, but Noah does not stop.",
+      "text_ko": "사람들은 그를 비웃지만, 노아는 멈추지 않아요.",
+      "start": 32.663,
+      "end": 37.112,
+      "page": 2
+    },
+    {
+      "order": 10,
+      "text_en": "Come in, two by two!",
+      "text_ko": "들어오렴, 둘씩 둘씩!",
+      "start": 37.112,
+      "end": 40.125,
+      "page": 3
+    },
+    {
+      "order": 11,
+      "text_en": "Elephants, lions, and cute little birds!",
+      "text_ko": "코끼리와 사자, 그리고 귀여운 작은 새들도!",
+      "start": 40.125,
+      "end": 45.0,
+      "page": 3
+    },
+    {
+      "order": 12,
+      "text_en": "Step safely into the boat!",
+      "text_ko": "배 안으로 안전하게 들어오세요!",
+      "start": 45.0,
+      "end": 48.175,
+      "page": 3
+    },
+    {
+      "order": 13,
+      "text_en": "Rain falls down, splash, splash, for forty days and nights.",
+      "text_ko": "비가 주룩주룩 40일 낮과 밤 동안 내려요.",
+      "start": 48.175,
+      "end": 54.725,
+      "page": 4
+    },
+    {
+      "order": 14,
+      "text_en": "At last, the rain stops.",
+      "text_ko": "마침내 비가 그쳐요.",
+      "start": 54.725,
+      "end": 58.237,
+      "page": 5
+    },
+    {
+      "order": 15,
+      "text_en": "A bright, beautiful rainbow shines in the sky.",
+      "text_ko": "하늘에 밝고 아름다운 무지개가 반짝여요.",
+      "start": 58.237,
+      "end": 62.737,
+      "page": 5
+    },
+    {
+      "order": 16,
+      "text_en": "God keeps His promise!",
+      "text_ko": "하나님은 약속을 지키셔요!",
+      "start": 62.737,
+      "end": 65.2,
+      "page": 5
+    }
+  ],
+  "pages": [
+    {
+      "page": 0,
+      "image": "assets/images/books/book_007_1.png"
+    },
+    {
+      "page": 1,
+      "image": "assets/images/books/book_007_2.png"
+    },
+    {
+      "page": 2,
+      "image": "assets/images/books/book_007_3.png"
+    },
+    {
+      "page": 3,
+      "image": "assets/images/books/book_007_4.png"
+    },
+    {
+      "page": 4,
+      "image": "assets/images/books/book_007_5.png"
+    },
+    {
+      "page": 5,
+      "image": "assets/images/books/book_007_6.png"
+    }
+  ]
+}

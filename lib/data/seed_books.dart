@@ -49,4 +49,58 @@ final List<Map<String, dynamic>> seedBooks = [
     'audio_path': 'assets/audio/book_006/full.mp3',
     'timing_path': 'assets/audio/book_006/timing.json',
   },
+  {
+    'id': 7,
+    'title': "Noah's Ark",
+    'level': 'Level 3',
+    // TODO: 전용 표지가 assets/images/covers/book_007.png로 준비되면 교체
+    'cover_image': 'assets/images/books/book_007_1.png',
+    'audio_path': 'assets/audio/book_007/full.mp3',
+    'timing_path': 'assets/audio/book_007/timing.json',
+  },
+  {
+    'id': 8,
+    'title': 'Joseph',
+    'level': 'Level 3',
+    // TODO: 전용 표지가 assets/images/covers/book_008.png로 준비되면 교체
+    'cover_image': 'assets/images/books/book_008_1.png',
+    'audio_path': 'assets/audio/book_008/full.mp3',
+    'timing_path': 'assets/audio/book_008/timing.json',
+  },
+  {
+    'id': 9,
+    'title': 'Baby Moses',
+    'level': 'Level 3',
+    // TODO: 전용 표지가 assets/images/covers/book_009.png로 준비되면 교체
+    'cover_image': 'assets/images/books/book_009_1.png',
+    'audio_path': 'assets/audio/book_009/full.mp3',
+    'timing_path': 'assets/audio/book_009/timing.json',
+  },
+  {
+    'id': 10,
+    'title': 'Young Samuel',
+    'level': 'Level 3',
+    // TODO: 전용 표지가 assets/images/covers/book_010.png로 준비되면 교체
+    'cover_image': 'assets/images/books/book_010_1.png',
+    'audio_path': 'assets/audio/book_010/full.mp3',
+    'timing_path': 'assets/audio/book_010/timing.json',
+  },
+  {
+    'id': 11,
+    'title': 'David and Goliath',
+    'level': 'Level 3',
+    // TODO: 전용 표지가 assets/images/covers/book_011.png로 준비되면 교체
+    'cover_image': 'assets/images/books/book_011_1.png',
+    'audio_path': 'assets/audio/book_011/full.mp3',
+    'timing_path': 'assets/audio/book_011/timing.json',
+  },
+  {
+    'id': 12,
+    'title': "Daniel in the Lion's Den",
+    'level': 'Level 3',
+    // TODO: 전용 표지가 assets/images/covers/book_012.png로 준비되면 교체
+    'cover_image': 'assets/images/books/book_012_1.png',
+    'audio_path': 'assets/audio/book_012/full.mp3',
+    'timing_path': 'assets/audio/book_012/timing.json',
+  },
 ];

@@ -1,0 +1,35 @@
+{
+  "book_id": 10,
+  "questions": [
+    {
+      "order": 0,
+      "question_en": "Did Samuel help Eli in the house of God?",
+      "question_ko": "사무엘은 하나님의 집에서 엘리를 도왔나요?",
+      "answer": true,
+      "feedback_en": "Yes, that's right!",
+      "feedback_ko": "네, 맞아요!",
+      "start": 0.0,
+      "end": 4.287
+    },
+    {
+      "order": 1,
+      "question_en": "Did God call Samuel's name at night?",
+      "question_ko": "하나님은 밤에 사무엘의 이름을 부르셨나요?",
+      "answer": true,
+      "feedback_en": "Yes, that's right!",
+      "feedback_ko": "네, 맞아요!",
+      "start": 4.287,
+      "end": 8.262
+    },
+    {
+      "order": 2,
+      "question_en": "Did Samuel know it was God calling the very first time?",
+      "question_ko": "사무엘은 처음부터 그것이 하나님인 줄 알았나요?",
+      "answer": false,
+      "feedback_en": "No, Eli helped him understand after it happened three times!",
+      "feedback_ko": "아니에요, 세 번이나 반복된 후에야 엘리가 알아차리게 도와주었어요!",
+      "start": 8.262,
+      "end": 12.575
+    }
+  ]
+}

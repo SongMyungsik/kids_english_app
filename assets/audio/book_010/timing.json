@@ -1,0 +1,159 @@
+{
+  "book_id": 10,
+  "sentences": [
+    {
+      "order": 0,
+      "text_en": "Little Samuel lives in the house of God.",
+      "text_ko": "꼬마 사무엘은 하나님의 집에 살아요.",
+      "start": 0.0,
+      "end": 3.862,
+      "page": 0
+    },
+    {
+      "order": 1,
+      "text_en": "He helps Eli the priest and cleans the rooms with a happy heart.",
+      "text_ko": "그는 행복한 마음으로 엘리 제사장을 돕고 방을 청소해요.",
+      "start": 3.862,
+      "end": 9.262,
+      "page": 0
+    },
+    {
+      "order": 2,
+      "text_en": "One quiet night, the lamp is still burning.",
+      "text_ko": "어느 조용한 밤, 등불이 아직 켜져 있어요.",
+      "start": 9.262,
+      "end": 13.688,
+      "page": 1
+    },
+    {
+      "order": 3,
+      "text_en": "Suddenly, someone calls a sweet name in the dark.",
+      "text_ko": "갑자기 어둠 속에서 누군가가 다정한 목소리로 이름을 불러요.",
+      "start": 13.688,
+      "end": 18.475,
+      "page": 1
+    },
+    {
+      "order": 4,
+      "text_en": "Samuel! Samuel!",
+      "text_ko": "사무엘아! 사무엘아!",
+      "start": 18.475,
+      "end": 22.25,
+      "page": 2
+    },
+    {
+      "order": 5,
+      "text_en": "Samuel jumps out of bed and runs quickly to Eli.",
+      "text_ko": "사무엘이 침대에서 벌떡 일어나 엘리에게 빨리 달려가요.",
+      "start": 22.25,
+      "end": 27.137,
+      "page": 3
+    },
+    {
+      "order": 6,
+      "text_en": "Here I am!",
+      "text_ko": "저 여기 있어요!",
+      "start": 27.137,
+      "end": 29.375,
+      "page": 3
+    },
+    {
+      "order": 7,
+      "text_en": "Did you call me, sir?",
+      "text_ko": "저를 부르셨나요, 선생님?",
+      "start": 29.375,
+      "end": 32.288,
+      "page": 3
+    },
+    {
+      "order": 8,
+      "text_en": "No, my child, I did not call you.",
+      "text_ko": "아니란다 내 아이야, 나는 너를 부르지 않았어.",
+      "start": 32.288,
+      "end": 36.487,
+      "page": 3
+    },
+    {
+      "order": 9,
+      "text_en": "Go back and sleep.",
+      "text_ko": "돌아가서 자거라.",
+      "start": 36.487,
+      "end": 39.15,
+      "page": 3
+    },
+    {
+      "order": 10,
+      "text_en": "This happens three times.",
+      "text_ko": "이 일이 세 번이나 일어나요.",
+      "start": 39.15,
+      "end": 42.3,
+      "page": 4
+    },
+    {
+      "order": 11,
+      "text_en": "Finally, Eli knows it is God!",
+      "text_ko": "마침내 엘리는 그것이 하나님이라는 것을 알아요!",
+      "start": 42.3,
+      "end": 46.075,
+      "page": 4
+    },
+    {
+      "order": 12,
+      "text_en": "Go lie down again.",
+      "text_ko": "다시 가서 누워 있으렴.",
+      "start": 46.075,
+      "end": 48.712,
+      "page": 4
+    },
+    {
+      "order": 13,
+      "text_en": "If He calls you, say, \"Speak, Lord, for your servant is listening.\"",
+      "text_ko": "그분이 너를 부르시거든, \"말씀하세요, 주의 종이 듣고 있어요\"라고 말하거라.",
+      "start": 48.712,
+      "end": 55.25,
+      "page": 4
+    },
+    {
+      "order": 14,
+      "text_en": "God calls again, and Samuel answers bravely.",
+      "text_ko": "하나님이 다시 부르시고, 사무엘이 용기 있게 대답해요.",
+      "start": 55.25,
+      "end": 60.075,
+      "page": 5
+    },
+    {
+      "order": 15,
+      "text_en": "Samuel grows up to be a great and wise helper for God!",
+      "text_ko": "사무엘은 자라서 하나님의 크고 지혜로운 일꾼이 돼요!",
+      "start": 60.075,
+      "end": 64.675,
+      "page": 5
+    }
+  ],
+  "pages": [
+    {
+      "page": 0,
+      "image": "assets/images/books/book_010_1.png"
+    },
+    {
+      "page": 1,
+      "image": "assets/images/books/book_010_2.png"
+    },
+    {
+      "page": 2,
+      "image": "assets/images/books/book_010_3.png"
+    },
+    {
+      "page": 3,
+      "image": "assets/images/books/book_010_4.png"
+    },
+    {
+      "page": 4,
+      "image": "assets/images/books/book_010_5.png"
+    },
+    {
+      "page": 5,
+      "image": "assets/images/books/book_010_6.png"
+    }
+  ]
+}
