@@ -1,0 +1,155 @@
+{
+  "book_id": 14,
+  "sentences": [
+    {
+      "order": 0,
+      "text_en": "Many years later, Jesus grew up.",
+      "text_ko": "여러 해가 지나, 예수님이 자라셨어요.",
+      "start": 0.0,
+      "end": 3.875,
+      "page": 0
+    },
+    {
+      "order": 1,
+      "text_en": "He went to the Jordan River to see John the Baptist.",
+      "text_ko": "그분은 세례요한을 만나기 위해 요단강으로 가셨답니다.",
+      "start": 3.875,
+      "end": 8.5,
+      "page": 0
+    },
+    {
+      "order": 2,
+      "text_en": "Welcome, Jesus!",
+      "text_ko": "환영합니다, 예수님!",
+      "start": 8.5,
+      "end": 11.438,
+      "page": 1
+    },
+    {
+      "order": 3,
+      "text_en": "You are the Savior.",
+      "text_ko": "당신은 구주시군요.",
+      "start": 11.438,
+      "end": 14.05,
+      "page": 1
+    },
+    {
+      "order": 4,
+      "text_en": "I am not worthy to baptize You.",
+      "text_ko": "저는 당신에게 세례를 드릴 자격이 없습니다.",
+      "start": 14.05,
+      "end": 17.637,
+      "page": 1
+    },
+    {
+      "order": 5,
+      "text_en": "You should baptize me!",
+      "text_ko": "오히려 당신이 저에게 세례를 주셔야 합니다!",
+      "start": 17.637,
+      "end": 20.488,
+      "page": 1
+    },
+    {
+      "order": 6,
+      "text_en": "Please do this now.",
+      "text_ko": "지금은 이렇게 허락하여라.",
+      "start": 20.488,
+      "end": 23.087,
+      "page": 1
+    },
+    {
+      "order": 7,
+      "text_en": "We must do everything God wants us to do.",
+      "text_ko": "하나님께서 원하시는 모든 일을 우리가 이루어야 한다.",
+      "start": 23.087,
+      "end": 27.137,
+      "page": 1
+    },
+    {
+      "order": 8,
+      "text_en": "So, John baptized Jesus in the clear river water.",
+      "text_ko": "그래서 요한은 맑은 강물 속에서 예수님께 세례를 드렸어요.",
+      "start": 27.137,
+      "end": 32.325,
+      "page": 2
+    },
+    {
+      "order": 9,
+      "text_en": "When Jesus came up from the water, the sky opened wide.",
+      "text_ko": "예수님께서 물에서 올라오실 때, 하늘이 활짝 열렸답니다.",
+      "start": 32.325,
+      "end": 37.538,
+      "page": 3
+    },
+    {
+      "order": 10,
+      "text_en": "The Holy Spirit came down like a dove, landing gently on Jesus.",
+      "text_ko": "성령님이 비둘기처럼 내려와 예수님 위에 부드럽게 머무셨어요.",
+      "start": 37.538,
+      "end": 43.638,
+      "page": 3
+    },
+    {
+      "order": 11,
+      "text_en": "Then, a bright voice from heaven spoke down to the earth.",
+      "text_ko": "그때, 하늘에서 세상으로 들려오는 밝은 목소리가 울려 퍼졌어요.",
+      "start": 43.638,
+      "end": 48.65,
+      "page": 4
+    },
+    {
+      "order": 12,
+      "text_en": "This is my beloved Son, and I am very happy with Him!",
+      "text_ko": "이는 내 사랑하는 아들이요, 내가 그를 매우 기뻐한다!",
+      "start": 48.65,
+      "end": 53.888,
+      "page": 4
+    },
+    {
+      "order": 13,
+      "text_en": "Jesus was ready to start His great work of love and healing for the world.",
+      "text_ko": "예수님은 세상을 향한 사랑과 치유의 위대한 사역을 시작할 준비를 마치셨답니다.",
+      "start": 53.888,
+      "end": 59.8,
+      "page": 4
+    },
+    {
+      "order": 14,
+      "text_en": "Praise God!",
+      "text_ko": "하나님을 찬양합니다!",
+      "start": 59.8,
+      "end": 62.038,
+      "page": 4
+    },
+    {
+      "order": 15,
+      "text_en": "Jesus is our true King and Savior!",
+      "text_ko": "예수님은 우리의 진정한 왕이자 구주시예요!",
+      "start": 62.038,
+      "end": 65.4,
+      "page": 4
+    }
+  ],
+  "pages": [
+    {
+      "page": 0,
+      "image": "assets/images/books/book_014_1.png"
+    },
+    {
+      "page": 1,
+      "image": "assets/images/books/book_014_2.png"
+    },
+    {
+      "page": 2,
+      "image": "assets/images/books/book_014_3.png"
+    },
+    {
+      "page": 3,
+      "image": "assets/images/books/book_014_4.png"
+    },
+    {
+      "page": 4,
+      "image": "assets/images/books/book_014_5.png"
+    }
+  ]
+}

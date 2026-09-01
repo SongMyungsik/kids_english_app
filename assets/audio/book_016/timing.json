@@ -1,0 +1,179 @@
+{
+  "book_id": 16,
+  "sentences": [
+    {
+      "order": 0,
+      "text_en": "Jesus and His friends walked toward the big city of Jerusalem.",
+      "text_ko": "예수님과 제자들이 큰 성 예루살렘을 향해 걸어갔어요.",
+      "start": 0.0,
+      "end": 5.5,
+      "page": 0
+    },
+    {
+      "order": 1,
+      "text_en": "Go to the small village ahead.",
+      "text_ko": "저기 앞에 있는 작은 마을로 가거라.",
+      "start": 5.5,
+      "end": 8.65,
+      "page": 1
+    },
+    {
+      "order": 2,
+      "text_en": "You will find a young donkey.",
+      "text_ko": "나귀 한 마리가 있을 것이다.",
+      "start": 8.65,
+      "end": 11.8,
+      "page": 1
+    },
+    {
+      "order": 3,
+      "text_en": "Untie it and bring it to Me.",
+      "text_ko": "그것을 풀어서 내게로 끌고 오너라.",
+      "start": 11.8,
+      "end": 14.975,
+      "page": 1
+    },
+    {
+      "order": 4,
+      "text_en": "The disciples brought the donkey, and Jesus gently sat upon it to ride into the city.",
+      "text_ko": "제자들이 나귀를 끌고 왔고, 예수님은 그 위에 올라타 성 안으로 들어가셨어요.",
+      "start": 14.975,
+      "end": 21.825,
+      "page": 2
+    },
+    {
+      "order": 5,
+      "text_en": "A very large crowd of people heard that Jesus was coming.",
+      "text_ko": "아주 많은 무리의 사람들이 예수님이 오신다는 소식을 들었어요.",
+      "start": 21.825,
+      "end": 27.025,
+      "page": 2
+    },
+    {
+      "order": 6,
+      "text_en": "They were so excited!",
+      "text_ko": "그들은 너무나 신이 났답니다!",
+      "start": 27.025,
+      "end": 29.938,
+      "page": 2
+    },
+    {
+      "order": 7,
+      "text_en": "Look!",
+      "text_ko": "봐봐!",
+      "start": 29.938,
+      "end": 31.712,
+      "page": 3
+    },
+    {
+      "order": 8,
+      "text_en": "Jesus is coming!",
+      "text_ko": "예수님이 오신다!",
+      "start": 31.712,
+      "end": 34.337,
+      "page": 3
+    },
+    {
+      "order": 9,
+      "text_en": "Let us welcome our King!",
+      "text_ko": "우리의 왕을 환영하자!",
+      "start": 34.337,
+      "end": 37.3,
+      "page": 3
+    },
+    {
+      "order": 10,
+      "text_en": "Take off your coats and spread them out on the road!",
+      "text_ko": "겉옷을 벗어서 길에 깔아라!",
+      "start": 37.3,
+      "end": 41.538,
+      "page": 3
+    },
+    {
+      "order": 11,
+      "text_en": "Cut down branches from the trees!",
+      "text_ko": "나무에서 가지를 꺾어오자!",
+      "start": 41.538,
+      "end": 45.1,
+      "page": 3
+    },
+    {
+      "order": 12,
+      "text_en": "The people waved palm branches and shouted happily with bright smiles.",
+      "text_ko": "사람들은 종려나무 가지를 흔들며 밝은 미소로 기쁘게 소리쳤어요.",
+      "start": 45.1,
+      "end": 51.1,
+      "page": 3
+    },
+    {
+      "order": 13,
+      "text_en": "Hosanna!",
+      "text_ko": "호산나!",
+      "start": 51.1,
+      "end": 53.212,
+      "page": 4
+    },
+    {
+      "order": 14,
+      "text_en": "Blessed is the King who comes in the name of the Lord!",
+      "text_ko": "주의 이름으로 오시는 왕이여 찬송을 받으소서!",
+      "start": 53.212,
+      "end": 57.638,
+      "page": 4
+    },
+    {
+      "order": 15,
+      "text_en": "Hosanna in the highest!",
+      "text_ko": "가장 높은 곳에서 호산나!",
+      "start": 57.638,
+      "end": 60.675,
+      "page": 4
+    },
+    {
+      "order": 16,
+      "text_en": "The whole city was filled with great joy and praise for Jesus.",
+      "text_ko": "온 성은 예수님을 향한 큰 기쁨과 찬양으로 가득 찼답니다.",
+      "start": 60.675,
+      "end": 66.075,
+      "page": 4
+    },
+    {
+      "order": 17,
+      "text_en": "We love you, Jesus!",
+      "text_ko": "예수님 사랑해요!",
+      "start": 66.075,
+      "end": 69.225,
+      "page": 4
+    },
+    {
+      "order": 18,
+      "text_en": "You are our Savior and King!",
+      "text_ko": "당신은 우리의 구주이자 왕이십니다!",
+      "start": 69.225,
+      "end": 72.025,
+      "page": 4
+    }
+  ],
+  "pages": [
+    {
+      "page": 0,
+      "image": "assets/images/books/book_016_1.png"
+    },
+    {
+      "page": 1,
+      "image": "assets/images/books/book_016_2.png"
+    },
+    {
+      "page": 2,
+      "image": "assets/images/books/book_016_3.png"
+    },
+    {
+      "page": 3,
+      "image": "assets/images/books/book_016_4.png"
+    },
+    {
+      "page": 4,
+      "image": "assets/images/books/book_016_5.png"
+    }
+  ]
+}

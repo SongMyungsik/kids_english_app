@@ -52,6 +52,10 @@ flutter:
     - assets/audio/book_010/
     - assets/audio/book_011/
     - assets/audio/book_012/
+    - assets/audio/book_013/
+    - assets/audio/book_014/
+    - assets/audio/book_015/
+    - assets/audio/book_016/
     - assets/images/covers/
     - assets/images/books/
     - assets/audio/ui/

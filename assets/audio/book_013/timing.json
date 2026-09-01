@@ -1,0 +1,195 @@
+{
+  "book_id": 13,
+  "sentences": [
+    {
+      "order": 0,
+      "text_en": "Long, long ago, in a town called Nazareth, an angel named Gabriel came to a kind woman named Mary.",
+      "text_ko": "아주 오랜 옛날, 나사렛이라는 동네에 가브리엘이라는 천사가 마리아라는 착한 여인에게 찾아왔어요.",
+      "start": 0.0,
+      "end": 8.988,
+      "page": 0
+    },
+    {
+      "order": 1,
+      "text_en": "Do not be afraid, Mary.",
+      "text_ko": "두려워하지 마라, 마리아야.",
+      "start": 8.988,
+      "end": 12.3,
+      "page": 0
+    },
+    {
+      "order": 2,
+      "text_en": "You will have a special baby.",
+      "text_ko": "너는 특별한 아기를 갖게 될 거야.",
+      "start": 12.3,
+      "end": 15.425,
+      "page": 0
+    },
+    {
+      "order": 3,
+      "text_en": "His name is Jesus, and He is God's Son!",
+      "text_ko": "아기의 이름은 예수님이고, 그분은 하나님의 아들이란다!",
+      "start": 15.425,
+      "end": 19.913,
+      "page": 0
+    },
+    {
+      "order": 4,
+      "text_en": "Soon, Mary and her husband Joseph had to go to a town called Bethlehem to write their names.",
+      "text_ko": "얼마 뒤, 마리아와 남편 요셉은 호적을 기록하기 위해 베들레헴이라는 동네로 가야 했어요.",
+      "start": 19.913,
+      "end": 27.488,
+      "page": 1
+    },
+    {
+      "order": 5,
+      "text_en": "The town was very full.",
+      "text_ko": "동네는 사람들로 아주 꽉 차 있었어요.",
+      "start": 27.488,
+      "end": 30.512,
+      "page": 2
+    },
+    {
+      "order": 6,
+      "text_en": "There was no room for them to sleep anywhere.",
+      "text_ko": "그들이 잠잘 방이 어디에도 없었답니다.",
+      "start": 30.512,
+      "end": 34.525,
+      "page": 2
+    },
+    {
+      "order": 7,
+      "text_en": "I am sorry, but my rooms are full.",
+      "text_ko": "미안하지만, 방이 모두 찼단다.",
+      "start": 34.525,
+      "end": 38.438,
+      "page": 2
+    },
+    {
+      "order": 8,
+      "text_en": "You can stay in the stable with the animals.",
+      "text_ko": "동물들이 있는 마구간에서 머물러도 좋아.",
+      "start": 38.438,
+      "end": 42.462,
+      "page": 2
+    },
+    {
+      "order": 9,
+      "text_en": "That night, baby Jesus was born in the humble stable.",
+      "text_ko": "그날 밤, 아기 예수님이 소박한 마구간에서 태어났어요.",
+      "start": 42.462,
+      "end": 47.55,
+      "page": 3
+    },
+    {
+      "order": 10,
+      "text_en": "Mary wrapped Him in soft cloths and laid Him in a manger.",
+      "text_ko": "마리아는 아기를 부드러운 천으로 감싸 구유에 뉘었답니다.",
+      "start": 47.55,
+      "end": 52.712,
+      "page": 3
+    },
+    {
+      "order": 11,
+      "text_en": "Do not be afraid!",
+      "text_ko": "두려워하지 마세요!",
+      "start": 52.712,
+      "end": 55.312,
+      "page": 4
+    },
+    {
+      "order": 12,
+      "text_en": "Today, a Savior is born in Bethlehem.",
+      "text_ko": "오늘, 베들레헴에 구주가 태어나셨습니다.",
+      "start": 55.312,
+      "end": 59.55,
+      "page": 4
+    },
+    {
+      "order": 13,
+      "text_en": "Go and see the baby!",
+      "text_ko": "가서 아기를 보셔요!",
+      "start": 59.55,
+      "end": 62.325,
+      "page": 4
+    },
+    {
+      "order": 14,
+      "text_en": "Shepherds in the fields saw bright angels and heard the good news.",
+      "text_ko": "들판에 있던 목자들이 밝은 천사들을 보고 기쁜 소식을 들었어요.",
+      "start": 62.325,
+      "end": 67.737,
+      "page": 4
+    },
+    {
+      "order": 15,
+      "text_en": "They ran to the stable to see baby Jesus.",
+      "text_ko": "그들은 아기 예수님을 보기 위해 마구간으로 달려갔답니다.",
+      "start": 67.737,
+      "end": 72.037,
+      "page": 4
+    },
+    {
+      "order": 16,
+      "text_en": "Look at the baby!",
+      "text_ko": "아기를 보세요!",
+      "start": 72.037,
+      "end": 74.463,
+      "page": 4
+    },
+    {
+      "order": 17,
+      "text_en": "He is sleeping peacefully.",
+      "text_ko": "아기가 평온하게 잠자고 있어요.",
+      "start": 74.463,
+      "end": 77.537,
+      "page": 4
+    },
+    {
+      "order": 18,
+      "text_en": "God has given us a great gift!",
+      "text_ko": "하나님께서 우리에게 큰 선물을 주셨어요!",
+      "start": 77.537,
+      "end": 81.013,
+      "page": 4
+    },
+    {
+      "order": 19,
+      "text_en": "Jesus is born!",
+      "text_ko": "예수님이 태어나셨어요!",
+      "start": 81.013,
+      "end": 83.625,
+      "page": 4
+    },
+    {
+      "order": 20,
+      "text_en": "Merry Christmas and thank you, God, for Your great love!",
+      "text_ko": "메리 크리스마스, 그리고 큰 사랑을 주신 하나님 감사합니다!",
+      "start": 83.625,
+      "end": 88.6,
+      "page": 4
+    }
+  ],
+  "pages": [
+    {
+      "page": 0,
+      "image": "assets/images/books/book_013_1.png"
+    },
+    {
+      "page": 1,
+      "image": "assets/images/books/book_013_2.png"
+    },
+    {
+      "page": 2,
+      "image": "assets/images/books/book_013_3.png"
+    },
+    {
+      "page": 3,
+      "image": "assets/images/books/book_013_4.png"
+    },
+    {
+      "page": 4,
+      "image": "assets/images/books/book_013_5.png"
+    }
+  ]
+}
